@@ -11,7 +11,6 @@ Phishing campaigns in the crypto space rely heavily on newly registered domains 
 
 The data is automatically processed, filtered for false positives, and updated regularly as a plain text blocklist. 
 
-- **File Path:** `/feed/domains.txt`
 - **Format:** Plain text, one domain per line (fully compatible with firewall Custom Categories, Pi-hole, DNS sinks, and custom scripts)
 - **Update Frequency:** Automated daily ingestion
 - **Classification:** TLP:CLEAR (Public sharing permitted)
@@ -23,7 +22,7 @@ The data is automatically processed, filtered for false positives, and updated r
 You can easily ingest this plain text feed into your security controls using `curl`:
 
 ```bash
-curl -s [https://gitlab.com/HackProtect-Labs/crypto-nrd-feed/-/raw/main/feed/domains.txt](https://gitlab.com/HackProtect-Labs/crypto-nrd-feed/-/raw/main/feed/domains.txt)
+curl -s https://raw.githubusercontent.com/hack-protect-labs/crypto-nrd-feed/refs/heads/main/list
 ```
 
 ---
