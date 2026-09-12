@@ -22,7 +22,7 @@ The data is automatically processed, filtered for false positives, and updated r
 You can easily ingest this plain text feed into your security controls using `curl`:
 
 ```bash
-curl -s https://raw.githubusercontent.com/hack-protect-labs/crypto-nrd-feed/refs/heads/main/list
+curl -s https://raw.githubusercontent.com/hack-protect-labs/crypto-nrd-feed/refs/heads/main/domains
 ```
 
 ---
