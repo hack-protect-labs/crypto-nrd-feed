@@ -25,6 +25,7 @@ You can easily ingest this plain text feed into your security controls using `cu
 ```bash
 curl -s [https://gitlab.com/HackProtect-Labs/crypto-nrd-feed/-/raw/main/feed/domains.txt](https://gitlab.com/HackProtect-Labs/crypto-nrd-feed/-/raw/main/feed/domains.txt)
 
+
 ---
 
 ## 🛑 False Positives & Domain Removal
