@@ -9,7 +9,7 @@ Phishing campaigns in the crypto space rely heavily on newly registered domains 
 
 ## 📊 Feed Structure & Format
 
-The data is automatically processed, filtered for false positives, and updated regularly as a plain text blocklist.
+The data is automatically processed, filtered for false positives, and updated regularly as a plain text blocklist. 
 
 - **File Path:** `/feed/domains.txt`
 - **Format:** Plain text, one domain per line (fully compatible with firewall Custom Categories, Pi-hole, DNS sinks, and custom scripts)
@@ -26,14 +26,14 @@ You can easily ingest this plain text feed into your security controls using `cu
 curl -s [https://gitlab.com/HackProtect-Labs/crypto-nrd-feed/-/raw/main/feed/domains.txt](https://gitlab.com/HackProtect-Labs/crypto-nrd-feed/-/raw/main/feed/domains.txt)
 
 
----
-
-## 🛑 False Positives & Domain Removal
+🛑 False Positives & Domain Removal
 
 We strive to maintain high accuracy and minimize false positives. However, if you are a domain owner, administrator, or security researcher and believe a legitimate domain has been incorrectly flagged and included in this feed, please report it immediately.
-
 To request a review or removal of a domain:
-- Open an **Issue** in this repository with the subject `False Positive: [domain-name.com]`, or
-- Reach out directly via X (Twitter): [@HackProtectLabs](https://x.com/HackProtectLabs)
-
+Open an Issue in this repository with the subject False Positive: [domain-name.com], or
+Reach out directly via X (Twitter): @HackProtectLabs
 We will review and remove verified false positives promptly.
+
+⚠️ Disclaimer
+This feed is provided for defensive security purposes, threat hunting, and research only. The indicators listed are compiled from automated OSINT sources and certificate transparency logs.
+Maintained by HackProtect Labs.
