@@ -2,10 +2,10 @@
 # Feed Name: Crypto NRD Threat Feed
 # Maintainer: HackProtect Labs (@HackProtectLabs)
 # Classification: TLP:CLEAR (Public sharing permitted)
-# Last Updated: 2026-09-13 00:15:55 UTC
+# Last Updated: 2026-09-13 00:23:37 UTC
 # Total Active Domains: 1157
 # Repository: https://github.com/HackProtect-Labs/crypto-nrd-feed
-# Description: Automated CTI feed tracking NRDs targeting Web3/Crypto & Typosquatting
+# Description: Automated CTI feed tracking NRDs targeting Web3/Crypto & Typosquatting (Accumulated)
 # =====================================================================
 aicrypto.agency
 framedex.ai
