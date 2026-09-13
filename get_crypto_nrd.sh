@@ -1,20 +1,25 @@
 #!/usr/bin/env bash
 # ============================================================================
-# HackProtect Labs - Crypto NRD Threat Feed (GitHub Actions Production Edition)
+# HackProtect Labs - Crypto NRD Threat Feed (Advanced CTI Scoring Edition)
 #
-# Purpose:
+# Capabilities:
 #   1. Securely retrieve newly registered domain (NRD) data from WhoisDS.
-#   2. Safely decompress zip/gzip archives without traversal risks (No Zip-Slip).
-#   3. Portable RFC 1035/1123 domain validation (100% mawk/gawk/nawk compatible).
-#   4. High-efficacy detection of crypto/Web3 phishing, typosquatting & leetspeak.
-#   5. Strictly append-only historical accumulation with SHRINK GUARD protection.
-#   6. Atomically update CTI feed on the same filesystem with verified integrity.
+#   2. Safe archive streaming decompression (Zip-Slip immune).
+#   3. Multi-Vector Threat Intelligence Scoring Engine:
+#      - Typosquatting & Leetspeak substitution detection (0->o, 1->i, 3->e, 4->a, 5->s)
+#      - Homoglyph & IDN / Punycode exploitation detection (xn--)
+#      - Brand Impersonation (Wallets, Centralized Exchanges, DEXs, Blockchains)
+#      - Suspicious Action Hook Combosquatting (airdrop, claim, connect, sync, verify, etc.)
+#      - High-Risk / Disposable TLD Abuse Scoring (.top, .xyz, .icu, .sbs, .live, etc.)
+#   4. 100% mawk / gawk / nawk compatibility (Zero regex interval {n,} dependencies).
+#   5. Pipefail-safe line counting & error handling.
+#   6. Strictly append-only accumulation with SHRINK GUARD database protection.
+#   7. Truly atomic feed file replacement & GitHub Actions CI integration.
 # ============================================================================
 
 set -Eeuo pipefail
 umask 077
 
-# Force deterministic byte-order and fast ASCII collation
 export LC_ALL=C
 export LC_COLLATE=C
 
@@ -36,7 +41,10 @@ LOCK_FILE="${LOCK_FILE:-${SCRIPT_DIR}/.nrd-feed.lock}"
 WHITELIST_FILE="${WHITELIST_FILE:-${SCRIPT_DIR}/whitelist.txt}"
 STRICT_DOWNLOAD="${STRICT_DOWNLOAD:-false}"
 
-# Shrink Guard: Dovoljen odstotek padca baze (privzeto 0% = strogo append-only)
+# CTI Scoring Threshold: domene z oceno >= THREAT_THRESHOLD so uvrščene v feed (privzeto 50)
+THREAT_THRESHOLD="${THREAT_THRESHOLD:-50}"
+
+# Shrink Guard: Dovoljen padec baze (privzeto 0% = strogi append-only način)
 MAX_ALLOWED_SHRINK_PERCENT="${MAX_ALLOWED_SHRINK_PERCENT:-0}"
 ALLOW_FEED_SHRINK="${ALLOW_FEED_SHRINK:-false}"
 
@@ -133,6 +141,18 @@ trap 'exit 129' HUP
 trap 'exit 131' QUIT
 
 # ============================================================================
+# Robust Domain Counter (Safe against set -o pipefail with 0 matches)
+# ============================================================================
+count_active_domains() {
+    local target="$1"
+    if [[ ! -f "$target" || ! -s "$target" ]]; then
+        printf '0\n'
+        return 0
+    fi
+    awk '!/^[[:space:]]*(#|$)/ { c++ } END { print c+0 }' "$target"
+}
+
+# ============================================================================
 # Date Portability Helper (GNU & BSD Compatibility)
 # ============================================================================
 DATE_FLAVOR=""
@@ -226,80 +246,183 @@ TEMP_WHITELIST="${TEMP_ROOT}/whitelist.txt"
 : > "$TEMP_ALL"
 
 # ============================================================================
-# Crypto / Web3 Detection Regex Engine (Leetspeak, Typosquatting & Deceptions)
+# Whitelist Configuration
 # ============================================================================
-# 1. Ciljane blagovne znamke s substitucijami (0->o, 1->i, 3->e, 4->a, 5->s) in podvojenimi črkami
-CRYPTO_BRANDS='(b[i1l]+n+[a4]+n+c[e3]?|m[e3]+t+[a4]+m+[a4]+s+k|m[e3]+t+[a4]+m+s+k|p+h+[a4]+n+t+[o0]+m|c[o0]+[i1l]+n+b+[a4]+s+[e3]?|t+r+[e3]+z+[o0]+r|l+[e3]+d+g+[e3]+r|u+n+[i1l]+s+w+[a4o]+p|[o0]+p+[e3]+n+s+[e3]+[a4]+|s+[o0]+l+[a4]+n+[a4]+|s+[o0]+l|e+t+h+[e3]+r+[e3]+u+m|e+t+h|p+[o0]+l+y+g+[o0]+n|k+r+[a4]+k+[e3]+n|k+[e3]+p+l+r|[e3]+x+[o0]+d+u+s|r+[a4]+b+b+y|r+[o0]+n+[i1l]+n|[a4]+r+b+[i1l]+t+r+u+m|[o0]+p+t+[i1l]+m+[i1l]+s+m|z+k+-?s+y+n+c|s+u+[i1l]+|[a4]+p+t+[o0]+s|t+r+u+s+t+-?w+[a4]+l+l+[e3]+t|p+r+[o0]+t+[o0]+n|m+[e3]+t+[a4]+)'
+WHITELIST_REGEX='(^|\.)(binance\.com|metamask\.io|uniswap\.org|ethereum\.org|polygon\.technology|proton\.me|ledger\.com|kraken\.com|coinbase\.com|opensea\.io|solana\.com|meta\.com|trezor\.io|exodus\.com|arbitrum\.io|optimism\.io|zksync\.io|keplr\.app|rabby\.io|trustwallet\.com|sui\.io|aptoslabs\.com|bybit\.com|okx\.com|kucoin\.com|gate\.io|bitget\.com|mexc\.com|crypto\.com)$'
 
-# 2. Splošni Web3 / Kripto izrazi z leetspeakom
-CRYPTO_TERMS='(c+r+[y|i|1]+p+t+[o0]+|w+[a4]+l+l+[e3]+t+[s]?|v+v+a+l+l+e+t|w+[e3]+b+3|v+v+e+b+3|d+[e3]+f+[i1l]+|d+[e3]+x|s+w+[a4]+p|s+t+[a4]+k+[e3]+|s+t+[a4]+k+[i1l]+n+g|m+[i1l]+n+t|m+[i1l]+n+t+[i1l]+n+g|t+[o0]+k+[e3]+n+[s]?|n+f+t+[s]?)'
-
-# 3. Phishing akcije in vabljivi izrazi (Combosquatting)
-ACTION_HOOKS='([a4][i1l]r-?dr[o0]p|cl[a4][i1l]m[s]?|cl[a4][i1l]m[i1l]ng|l[o0]g[i1l]n|s[i1l]gn[i1l]n|[a4]uth|v[e3]r[i1l]fy|v[e3]r[i1l]f[i1l]c[a4]t[i1l][o0]n|c[o0]nn[e3]ct|sync|s[e3]cur[e3]|s[e3]cur[i1l]ty|supp[o0]rt|h[e3]lp|r[e3]w[a4]rd[s]?|pr[o0]m[o0]|b[o0]nus|m[i1l]gr[a4]t[e3]|upd[a4]t[e3]|v[a4]ult|br[i1l]dg[e3]|r[e3]s[o0]lv[e3]|n[o0]d[e3]|kyc)'
-
-DETECTION_REGEX="(^|[.-])(${CRYPTO_BRANDS}|${CRYPTO_TERMS})([.-]|$)"
-COMBO_REGEX="(^|[.-])(${CRYPTO_BRANDS}|${CRYPTO_TERMS}).*(${ACTION_HOOKS})|(${ACTION_HOOKS}).*(${CRYPTO_BRANDS}|${CRYPTO_TERMS})([.-]|$)"
-PUNYCODE_REGEX='(^|\.)xn--'
-
-WHITELIST_REGEX='(^|\.)(binance\.com|metamask\.io|uniswap\.org|ethereum\.org|polygon\.technology|proton\.me|ledger\.com|kraken\.com|coinbase\.com|opensea\.io|solana\.com|meta\.com|trezor\.io|exodus\.com|arbitrum\.io|optimism\.io|zksync\.io|keplr\.app|rabby\.io|trustwallet\.com|sui\.io|aptoslabs\.com)$'
-
-# Compile external whitelist if provided
 : > "$TEMP_WHITELIST"
 if [[ -n "$WHITELIST_FILE" && -f "$WHITELIST_FILE" ]]; then
     cyan "Nalagam zunanji whitelist: ${WHITELIST_FILE}"
-    grep -vE '^[[:space:]]*#|^[[:space:]]*$' "$WHITELIST_FILE" |
+    { grep -vE '^[[:space:]]*#|^[[:space:]]*$' "$WHITELIST_FILE" || true; } |
         tr '[:upper:]' '[:lower:]' |
         sed -E 's#^[[:space:]]+##; s#[[:space:]]+$##; s#^\.+##; s#\.+$##' |
         sort -u >> "$TEMP_WHITELIST"
 fi
 
 # ============================================================================
-# Domain Extraction & RFC Validation Engine (100% mawk / gawk / nawk Compatible)
-# OPOMBA: Strogo BREZ {n,} intervalnih izrazov v AWK!
+# Multi-Vector Threat Intelligence Scoring Engine (AWK Core)
 # ============================================================================
-extract_and_validate_domains() {
-    awk '
+analyze_and_score_domains() {
+    awk -v THRESHOLD="$THREAT_THRESHOLD" '
+    BEGIN {
+        # Statistično najbolj zlorabljene končnice po CTI analizah
+        split("top xyz icu sbs cfd rest buzz monster fit site online click link shop work vip cloud cc ws live space network su to cx", tld_arr, " ")
+        for (i in tld_arr) abuse_tld[tld_arr[i]] = 1
+    }
+
+    function calculate_threat_score(domain,    score, labels, n, tld, name_part, is_punycode, has_brand, has_crypto, has_hook, has_typo) {
+        score = 0
+
+        # Whitelist preverba
+        if (domain ~ /(^|\.)(binance\.com|metamask\.io|uniswap\.org|ethereum\.org|polygon\.technology|proton\.me|ledger\.com|kraken\.com|coinbase\.com|opensea\.io|solana\.com|meta\.com|trezor\.io|exodus\.com|arbitrum\.io|optimism\.io|zksync\.io|keplr\.app|rabby\.io|trustwallet\.com|sui\.io|aptoslabs\.com|bybit\.com|okx\.com|kucoin\.com|gate\.io|bitget\.com|mexc\.com|crypto\.com)$/) {
+            return 0
+        }
+
+        n = split(domain, labels, ".")
+        if (n < 2) return 0
+        tld = labels[n]
+        name_part = labels[1]
+        for (i = 2; i < n; i++) name_part = name_part "." labels[i]
+
+        # 1. Homoglifi in IDN / Punycode (xn--)
+        is_punycode = (domain ~ /(^|\.)xn--/)
+        if (is_punycode) score += 35
+
+        # 2. Visoko-tvegane TLD končnice
+        if (tld in abuse_tld) score += 20
+
+        # 3. Brand Impersonation, Leetspeak in Typosquatting
+        has_brand = 0
+        has_typo = 0
+        if (name_part ~ /(b[i1l]+n+[a4]+n+c[e3]?|m[e3]+t+[a4]+m+[a4]+s+k|m[e3]+t+[a4]+m+s+k|p+h+[a4]+n+t+[o0]+m|c[o0]+[i1l]+n+b+[a4]+s+[e3]?|t+r+[e3]+z+[o0]+r|l+[e3]+d+g+[e3]+r|u+n+[i1l]+s+w+[a4o]+p|[o0]+p+[e3]+n+s+[e3]+[a4]+|s+[o0]+l+[a4]+n+[a4]+|e+t+h+[e3]+r+[e3]+u+m|p+[o0]+l+y+g+[o0]+n|k+r+[a4]+k+[e3]+n|k+[e3]+p+l+r|[e3]+x+[o0]+d+u+s|r+[a4]+b+b+y|r+[o0]+n+[i1l]+n|[a4]+r+b+[i1l]+t+r+u+m|[o0]+p+t+[i1l]+m+[i1l]+s+m|z+k+-?s+y+n+c|s+u+[i1l]+|[a4]+p+t+[o0]+s|t+r+u+s+t+-?w+[a4]+l+l+[e3]+t|b+y+b+[i1l]+t|[o0]+k+x|k+u+c+[o0]+[i1l]+n|b+[i1l]+t+g+[e3]+t|m+[e3]+x+c|p+r+[o0]+t+[o0]+n)/) {
+            has_brand = 1
+            score += 40
+
+            # Detekcija številskega leetspeaka ali podvojenih črk
+            if (name_part ~ /([0-9]|binnance|metamaask|unisswap|soolana|coiinbase|phantoom)/) {
+                has_typo = 1
+                score += 20
+            }
+        }
+
+        # 4. Splošni Web3 in kripto izrazi
+        has_crypto = 0
+        if (name_part ~ /(c+r+[y|i|1]+p+t+[o0]+|w+[a4]+l+l+[e3]+t+[s]?|v+v+a+l+l+e+t|w+[e3]+b+3|v+v+e+b+3|d+[e3]+f+[i1l]+|d+[e3]+x|s+w+[a4]+p|s+t+[a4]+k+[e3]+|s+t+[a4]+k+[i1l]+n+g|m+[i1l]+n+t|t+[o0]+k+[e3]+n+[s]?|n+f+t+[s]?)/) {
+            has_crypto = 1
+            score += 25
+        }
+
+        # 5. Phishing akcije in zavajanja (Combosquatting)
+        has_hook = 0
+        if (name_part ~ /([a4][i1l]r-?dr[o0]p|cl[a4][i1l]m|pr[e3]-?s[a4]l[e3]|s+y+n+c|r[e3]ct[i1l]fy|r[e3]s[o0]lv[e3]|k+y+c|r[e3]c[o0]v[e3]r|s[e3][e3]d|phr[a4]s[e3]|p[a4]ssw[o0]rd)/) {
+            has_hook = 2
+            score += 35
+        }
+        else if (name_part ~ /(l[o0]g[i1l]n|s[i1l]gn[i1l]n|[a4]uth|v[e3]r[i1l]fy|c[o0]nn[e3]ct|s[e3]cur|supp[o0]rt|h[e3]lp|r[e3]w[a4]rd|pr[o0]m[o0]|b[o0]nus|m[i1l]gr[a4]t|upd[a4]t|v[a4]ult|br[i1l]dg|n[o0]d[e3])/) {
+            has_hook = 1
+            score += 20
+        }
+
+        # 6. Sinergijski bonus (Znamka/Kripto + Phishing akcija)
+        if ((has_brand || has_crypto) && has_hook > 0) {
+            score += 25
+        }
+
+        # Sinergijski bonus (Punycode + Znamka/Kripto/Akcija)
+        if (is_punycode && (has_brand || has_crypto || has_hook > 0)) {
+            score += 30
+        }
+
+        return score
+    }
+
     {
         sub(/^[[:space:]]*#.*$/, "")
         if ($0 ~ /^[[:space:]]*$/) next
 
-        # Čiščenje ločil in narekovajev v CSV / logih
         gsub(/[\r\n\t,;"]/, " ")
         gsub(/\047/, " ")
 
         for (i = 1; i <= NF; i++) {
             token = $i
-
-            # Odstrani protokole, poti, vrata
             sub(/^https?:\/\//, "", token)
             sub(/\/.*$/, "", token)
             sub(/:[0-9]+$/, "", token)
-
-            # Odstrani začetne/končne pike ter pretvori v male črke
             sub(/^\.+/, "", token)
             sub(/\.+$/, "", token)
             token = tolower(token)
 
-            # Preverjanje dolžine in dovoljenih znakov
             if (length(token) < 4 || length(token) > 253) continue
             if (token !~ /\./) continue
             if (token ~ /\.\./) continue
             if (token !~ /^[a-z0-9.-]+$/) continue
             if (token ~ /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$/) continue
 
-            n = split(token, labels, ".")
-            if (n < 2) continue
+            num_labels = split(token, labels_arr, ".")
+            if (num_labels < 2) continue
 
             valid = 1
-            for (j = 1; j <= n; j++) {
-                lbl = labels[j]
+            for (j = 1; j <= num_labels; j++) {
+                lbl = labels_arr[j]
                 len = length(lbl)
                 if (len < 1 || len > 63) { valid = 0; break }
                 if (lbl ~ /^-/ || lbl ~ /-$/) { valid = 0; break }
-                
-                # TLD preverba: dolžina >= 2, samo črke ali punycode xn--
-                # BREZ {2,} INTERVALA! Uporabljena len + preprost plus regex.
-                if (j == n) {
+
+                if (j == num_labels) {
+                    if (len < 2) { valid = 0; break }
+                    if (lbl ~ /^[0-9]+$/) { valid = 0; break }
+                    if (lbl !~ /^[a-z]+$/ && lbl !~ /^xn--[a-z0-9]+$/) { valid = 0; break }
+                }
+            }
+
+            if (valid) {
+                score = calculate_threat_score(token)
+                if (score >= THRESHOLD) {
+                    print token
+                }
+                break
+            }
+        }
+    }'
+}
+
+# ============================================================================
+# Domain Extraction for Existing Feed Validation
+# ============================================================================
+extract_and_validate_history() {
+    awk '
+    {
+        sub(/^[[:space:]]*#.*$/, "")
+        if ($0 ~ /^[[:space:]]*$/) next
+
+        gsub(/[\r\n\t,;"]/, " ")
+        gsub(/\047/, " ")
+
+        for (i = 1; i <= NF; i++) {
+            token = $i
+            sub(/^https?:\/\//, "", token)
+            sub(/\/.*$/, "", token)
+            sub(/:[0-9]+$/, "", token)
+            sub(/^\.+/, "", token)
+            sub(/\.+$/, "", token)
+            token = tolower(token)
+
+            if (length(token) < 4 || length(token) > 253) continue
+            if (token !~ /\./) continue
+            if (token ~ /\.\./) continue
+            if (token !~ /^[a-z0-9.-]+$/) continue
+            if (token ~ /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$/) continue
+
+            num_labels = split(token, labels_arr, ".")
+            if (num_labels < 2) continue
+
+            valid = 1
+            for (j = 1; j <= num_labels; j++) {
+                lbl = labels_arr[j]
+                len = length(lbl)
+                if (len < 1 || len > 63) { valid = 0; break }
+                if (lbl ~ /^-/ || lbl ~ /-$/) { valid = 0; break }
+                if (j == num_labels) {
                     if (len < 2) { valid = 0; break }
                     if (lbl ~ /^[0-9]+$/) { valid = 0; break }
                     if (lbl !~ /^[a-z]+$/ && lbl !~ /^xn--[a-z0-9]+$/) { valid = 0; break }
@@ -491,15 +614,13 @@ process_type() {
 # Main Execution Flow
 # ============================================================================
 green "============================================================"
-green "HackProtect Labs | Crypto NRD Threat Feed (GitHub Edition)"
+green "HackProtect Labs | Crypto NRD Threat Feed (CTI Scoring Edition)"
 green "============================================================"
 
-# Preberi velikost obstoječega feeda za Shrink Guard
-PREV_FEED_COUNT=0
-if [[ -f "$OUTPUT_FEED" ]]; then
-    PREV_FEED_COUNT="$(grep -vE '^[[:space:]]*#|^[[:space:]]*$' "$OUTPUT_FEED" | wc -l | tr -d ' ')"
-    cyan "Obstoječa zgodovinska baza domen: ${PREV_FEED_COUNT} indikatorjev"
-fi
+# Pipefail-safe branje velikosti obstoječega feeda
+PREV_FEED_COUNT="$(count_active_domains "$OUTPUT_FEED")"
+cyan "Obstoječa zgodovinska baza domen: ${PREV_FEED_COUNT} indikatorjev"
+cyan "Nastavljeni CTI Threat Score prag: >= ${THREAT_THRESHOLD} točk"
 
 # Obdelaj Free Feed
 process_type "free"
@@ -513,14 +634,13 @@ else
 fi
 
 # ============================================================================
-# Filtriranje in zaznava phishing indikatorjev
+# CTI Scoring & Threat Extraction Engine
 # ============================================================================
-cyan "Normaliziram in filtriram domene (blagovne znamke, leetspeak, zavajanja)..."
+cyan "Izvajam CTI analizo: typosquatting, homoglifi, znamke, combosquatting in TLD točkovanje..."
 
 if [[ -s "$TEMP_ALL" ]]; then
-    extract_and_validate_domains < "$TEMP_ALL" |
-        grep -Evi "$WHITELIST_REGEX" |
-        grep -Ei "${DETECTION_REGEX}|${COMBO_REGEX}|${PUNYCODE_REGEX}" |
+    analyze_and_score_domains < "$TEMP_ALL" |
+        { grep -Evi "$WHITELIST_REGEX" || true; } |
         sort -u > "$TEMP_FILTERED"
 else
     : > "$TEMP_FILTERED"
@@ -528,23 +648,23 @@ fi
 
 # Uveljavi zunanji whitelist na novih kandidatih
 if [[ -s "$TEMP_WHITELIST" && -s "$TEMP_FILTERED" ]]; then
-    grep -F -v -x -f "$TEMP_WHITELIST" "$TEMP_FILTERED" > "${TEMP_FILTERED}.tmp" || true
+    { grep -F -v -x -f "$TEMP_WHITELIST" "$TEMP_FILTERED" || true; } > "${TEMP_FILTERED}.tmp"
     mv -f -- "${TEMP_FILTERED}.tmp" "$TEMP_FILTERED"
 fi
 
 FILTERED_TODAY="$(wc -l < "$TEMP_FILTERED" | tr -d ' ')"
-cyan "Novih odkritih potencialnih phishing kandidatov: ${FILTERED_TODAY}"
+cyan "Novih odkritih visoko-tveganih phishing indikatorjev: ${FILTERED_TODAY}"
 
 # ============================================================================
 # Strictly Append-Only Historical Merging
 # ============================================================================
 if [[ -f "$OUTPUT_FEED" ]]; then
     cyan "Nalagam obstoječi zgodovinski feed (append-only način)..."
-    extract_and_validate_domains < "$OUTPUT_FEED" > "$TEMP_HISTORY"
+    extract_and_validate_history < "$OUTPUT_FEED" > "$TEMP_HISTORY"
 
-    # Če se posodobi zunanji whitelist, se izločijo lažni pozitivi
+    # Če se posodobi zunanji whitelist, se izločijo lažni pozitivi iz zgodovine
     if [[ -s "$TEMP_WHITELIST" && -s "$TEMP_HISTORY" ]]; then
-        grep -F -v -x -f "$TEMP_WHITELIST" "$TEMP_HISTORY" > "${TEMP_HISTORY}.tmp" || true
+        { grep -F -v -x -f "$TEMP_WHITELIST" "$TEMP_HISTORY" || true; } > "${TEMP_HISTORY}.tmp"
         mv -f -- "${TEMP_HISTORY}.tmp" "$TEMP_HISTORY"
     fi
 else
@@ -598,8 +718,7 @@ cat > "$TEMP_FEED_FILE" <<EOF
 # Last Updated: ${UTC_NOW}
 # Total Active Domains: ${TOTAL_DOMAINS}
 # Repository: https://github.com/HackProtect-Labs/crypto-nrd-feed
-# Description: Automated CTI feed tracking newly registered domains associated with
-#              Web3/Crypto phishing, impersonation, typosquatting & leetspeak indicators.
+# Detection Model: Multi-Vector CTI Scoring (Typosquat + Homoglyphs + Combosquat + TLD Scoring)
 # Retention: Historical accumulation enabled (strictly append-only).
 # =====================================================================
 EOF
@@ -614,7 +733,7 @@ mv -f -- "$TEMP_FEED_FILE" "$OUTPUT_FEED"
 [[ -s "$OUTPUT_FEED" ]] || die "Končni feed je prazen."
 grep -q '^# Feed Name: Crypto NRD Threat Feed$' "$OUTPUT_FEED" || die "Validacija glave feeda ni uspela."
 
-COUNT_IN_FEED="$(grep -vE '^#|^[[:space:]]*$' "$OUTPUT_FEED" | wc -l | tr -d ' ')"
+COUNT_IN_FEED="$(count_active_domains "$OUTPUT_FEED")"
 if [[ "$COUNT_IN_FEED" -ne "$TOTAL_DOMAINS" ]]; then
     die "Integriteta feeda ni skladna: glava trdi ${TOTAL_DOMAINS}, dejanskih vrstic domen pa je ${COUNT_IN_FEED}."
 fi
@@ -657,6 +776,7 @@ if [[ "$IS_GITHUB_ACTIONS" == "true" ]]; then
 | Metrika | Vrednost |
 | :--- | :--- |
 | **Status** | ✅ Uspešno posodobljeno (Append-only) |
+| **CTI Model** | Multi-Vector Scoring (Typosquat, IDN, Combos, TLD) |
 | **Nove detekcije danes** | \`${FILTERED_TODAY}\` |
 | **Neto dodanih domen** | \`+${NET_NEW}\` |
 | **Skupno v bazi (Historical)** | \`${TOTAL_DOMAINS}\` |
