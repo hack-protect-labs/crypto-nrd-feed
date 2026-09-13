@@ -40,7 +40,7 @@ BASE_URL_FREE="https://whoisds.com/whois-database/newly-registered-domains"
 BASE_URL_PAID="https://whoisds.com/your-download/direct-download_file/${PAID_WHOISDS_USERNAME}/${PAID_WHOISDS_PASSWORD}"
 
 cd "$DIR"
-echo.Green "HackProtect Labs | NRD Downloader & Crypto Filter zagnan..."
+echo.Green "HackProtect Labs | NRD Downloader & Crypto Accumulator zagnan..."
 
 function download() {
     local i="$DAY_RANGE"
@@ -80,32 +80,35 @@ if [ -n "$PAID_WHOISDS_USERNAME" ] && [ -n "$PAID_WHOISDS_PASSWORD" ]; then
     download paid
 fi
 
-# 3. KRIPTO FILTRIRANJE IN TYPOSQUATTING DETEKCIJA
-echo.Cyan "Izvajam napredno kripto heuristično filtriranje (Keywords & Typosquatting)..."
+# 3. KRIPTO FILTRIRANJE IN AKUMULACIJA (Zgodovinsko shranjevanje)
+echo.Cyan "Izvajam napredno kripto heuristično filtriranje in akumulacijo domen..."
 
-# Razširjen regex za Web3/Crypto ključne besede, vključno z novimi vnosi (xpr, proton, meta) in typosquatting stemi
+# Razširjen regex za Web3/Crypto ključne besede in typosquatting steme
 CRYPTO_REGEX="(crypto|wallet|dex|swap|stake|airdrop|claim|nft|mint|binance|binanc|metamask|metamsk|phantom|uniswap|uniswop|opensea|solana|ethereum|polygon|ledger|xpr|proton|meta|coin|base|kraken|cryp)"
 
 mkdir -p feed
 OUTPUT_FEED="feed/domains.txt"
 
-# Obdelava:
-# - Odstranimo komentarje in prazne vrstice
-# - Filtriramo skozi kripto ključne besede (ne občutljivo na velikost črk)
-# - Izločimo legitimne domene (whitelist), da preprečimo False Positives
-# - Uredimo po TLD-ju za lepšo strukturo
+# Izvlečemo nove filtrirane domene iz današnjega prenosa
 grep -vE '^(#|$)' "$TEMP_FILE" \
     | grep -iE "$CRYPTO_REGEX" \
     | grep -viE "(binance\.com|metamask\.io|uniswap\.org|ethereum\.org|polygon\.technology|proton\.me|meta\.com)" \
-    | awk -F. '{print $NF, $0}' \
-    | sort -u \
-    | cut -d' ' -f2- > sorted_filtered.tmp
+    | cut -d' ' -f2- > new_filtered.tmp
 
-# Izračunamo končno število filtriranih domen
+# Če prejšnji feed že obstaja, vanj vključimo tudi obstoječe domene (akumulacija zgodovine)
+if [ -f "$OUTPUT_FEED" ]; then
+    grep -vE '^(#|$)' "$OUTPUT_FEED" >> new_filtered.tmp
+fi
+
+# Uredimo po TLD-ju, odstranimo duplikate (sort -u) in pripravimo končni seznam
+cat new_filtered.tmp | awk -F. '{print $NF, $0}' | sort -u | cut -d' ' -f2- > sorted_filtered.tmp
+rm -f new_filtered.tmp
+
+# Izračunamo skupno število unikatnih domen v bazi
 TOTAL_DOMAINS=$(grep -vcE '^(#|$)' sorted_filtered.tmp)
 UTC_NOW="$(date -u '+%Y-%m-%d %H:%M:%S UTC')"
 
-# 4. Zapis končnega formata z glavo (Header) v feed/domains.txt
+# 4. Zapis osveženega formata z glavo in vsemi akumuliranimi domenami
 cat << EOF > "$OUTPUT_FEED"
 # =====================================================================
 # Feed Name: Crypto NRD Threat Feed
@@ -114,11 +117,11 @@ cat << EOF > "$OUTPUT_FEED"
 # Last Updated: ${UTC_NOW}
 # Total Active Domains: ${TOTAL_DOMAINS}
 # Repository: https://github.com/HackProtect-Labs/crypto-nrd-feed
-# Description: Automated CTI feed tracking NRDs targeting Web3/Crypto & Typosquatting
+# Description: Automated CTI feed tracking NRDs targeting Web3/Crypto & Typosquatting (Accumulated)
 # =====================================================================
 EOF
 
 cat sorted_filtered.tmp >> "$OUTPUT_FEED"
 rm -f "$TEMP_FILE" sorted_filtered.tmp
 
-echo.Green "Uspešno! Filtriran feed s typosquatting detekcijo shranjen v $OUTPUT_FEED ($TOTAL_DOMAINS domen najdenih)."
+echo.Green "Uspešno! Akumuliran feed shranjen v $OUTPUT_FEED (Skupno unikatnih domen: $TOTAL_DOMAINS)."
