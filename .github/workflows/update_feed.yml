@@ -1,0 +1,33 @@
+name: Run Crypto NRD Collector & Update Feed
+
+on:
+  schedule:
+    - cron: '0 2 * * *' # Avtomatski zagon vsak dan ob 02:00 UTC
+  workflow_dispatch: # Omogoča tudi ročni zagon preko GitHub zavihka "Actions"
+
+permissions:
+  contents: write # Nujno dovoljenje, da lahko GitHub bot shrani spremembe nazaj v repo
+
+jobs:
+  generate-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Make script executable
+        run: chmod +x get_crypto_nrd.sh
+
+      - name: Run NRD Downloader and Filter
+        env:
+          WHOISDS_USER: ${{ secrets.WHOISDS_USER }}
+          WHOISDS_PASS: ${{ secrets.WHOISDS_PASS }}
+          DAY_RANGE: "1"
+        run: ./get_crypto_nrd.sh
+
+      - name: Commit and push updated feed
+        run: |
+          git config --global user.name "HackProtect Bot"
+          git config --global user.email "bot@hackprotect.labs"
+          git add feed/domains.txt
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update crypto NRD feed [skip ci]" && git push)
