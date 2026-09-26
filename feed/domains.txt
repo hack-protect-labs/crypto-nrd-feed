@@ -2,8 +2,8 @@
 # Feed Name: Crypto NRD Threat Feed
 # Maintainer: HackProtect Labs (@HackProtectLabs)
 # Classification: TLP:CLEAR
-# Last Updated: 2026-09-25 07:18:56 UTC
-# Total Active Domains: 3045
+# Last Updated: 2026-09-26 07:14:46 UTC
+# Total Active Domains: 3210
 # Repository: https://github.com/HackProtect-Labs/crypto-nrd-feed
 # Detection Model: Multi-Vector CTI Scoring (Typosquat + Homoglyphs + Combosquat + TLD Scoring)
 # Retention: Historical accumulation enabled (strictly append-only).
@@ -25,6 +25,8 @@
 1sultan-garuda138.skin
 1sultan618.lol
 237780coinbase.com
+247consultingsrl.com
+2a-consult.com
 2gbmediaconsulting.com
 2kycc.top
 2ndyearresult2026.online
@@ -34,18 +36,24 @@
 319consultingllc.com
 32000920tucqoksuii213.top
 3konsulenter.dk
+3mefenomenoconsultoria.online
 3qubeconsultants.com
 3rdiconsultant.com
 4beeconsulting.ar
 4beeconsulting.com.ar
 4dresultsnow.com
+4mzconsult.com
 513639coinbase.com
 51posui.cn
 5828342-coinbase.com
+584392coinbase.com
 5ringsconsulting.com
+5s33d.top
+6686result-live.com.cn
 6soilandgasconsulting.net
 77mgweokxx.com
 792517-binance.com
+7bridgesconsultancy.com
 7okx6372.cfd
 7pusulabet.com
 7wonderstravelconsultancy.com
@@ -146,6 +154,7 @@ agentpeninsula.xyz
 agentsdisclaim.xyz
 agiconsulship.xyz
 agnetsuits.top
+agora-consultar.online
 aiagentssuite.xyz
 aialertssuite.xyz
 aicatalogsuite.xyz
@@ -216,6 +225,7 @@ aisyncpulse.xyz
 aitriagesuite.xyz
 aiutilitysuite.xyz
 aiworkersseed.xyz
+aksoilsuit.online
 alabasterledger.shop
 alarmexchanger.xyz
 albertethereum.xyz
@@ -234,6 +244,7 @@ alphasuitable.xyz
 amconsulting.live
 americaninsulation.site
 amlledgerview.xyz
+anakrosul.shop
 anglesethereum.xyz
 annpiperconsulting.online
 anshinsuido-support-lp.com
@@ -249,6 +260,7 @@ applyseed.xyz
 appsynclens.xyz
 appuniswap.org
 aprilethereum.xyz
+ar1kraken.com
 arabseedtech.cc
 arabsseed.cfd
 arbitiumseed.xyz
@@ -264,6 +276,8 @@ artistclaim.xyz
 asprojectclaim.xyz
 assetpassword.xyz
 assumeethereum.xyz
+assureimmigrationconsultancyinc.ca
+asterdex-airdrop.com
 asuix.shop
 asulg.online
 asynccrypto.com
@@ -290,6 +304,7 @@ avatarsclaim.xyz
 averageairdrop.xyz
 averonweb3ledger.live
 axisync.buzz
+b2bgloballinkconsulting.com
 b2bsaasdemoconsulting.com
 b3consultoriaetreinamento.com
 back2balanceconsulting.com
@@ -297,6 +312,7 @@ backingsuite.xyz
 backlinkgeneratoronline.online
 backlinkgeneratoronline.space
 backlinkmakeronline.shop
+baglicasuleymaniye.k12.tr
 balanceclaim.xyz
 balizaconsul.live
 ballsethereum.xyz
@@ -373,9 +389,11 @@ breaksethereum.xyz
 bridgebetoken.xyz
 bridgeconsulting.io
 bridgecorp-consulting.com
+bridgepconsulting.com
 bridgepointweb3.com
 bridgeskillsconsulting.com
 bridgesuitable.xyz
+brightcourseeducation.online
 brittanykimconsulting.online
 brokenethereum.xyz
 brokeraisuite.xyz
@@ -398,6 +416,7 @@ cambridgestake.xyz
 cantikclaim.xyz
 cappuccinocapsula.shop
 carawayledger.shop
+caresandconsulting.online
 carpetethereum.xyz
 case839213-coinbase.com
 casesethereum.xyz
@@ -429,6 +448,7 @@ chatbotresults.xyz
 chatproclaimed.xyz
 checkersuit.xyz
 cheetosolana.xyz
+chopsui.online
 chungcu-hinodesuite.com
 ciencyethereum.xyz
 cinnamonledger.shop
@@ -466,9 +486,11 @@ claimedrestake.xyz
 claimedspace.xyz
 claimedstable.xyz
 claimedwork.xyz
+claimforge.click
 claimformsapp.xyz
 claimformslabs.xyz
 claimfreesol.xyz
+claimgo.site
 claimhub.space
 claiming-jito.network
 claiming-wormhole.xyz
@@ -541,7 +563,9 @@ codeledgerhub.xyz
 codeledgerkit.xyz
 codingclaim.xyz
 cofactorsuite.buzz
+coinbase-support.biz
 coinbase-transaction.shop
+coinbasedeauth.com
 coinbasewallet.es
 coinbaseweb30.com
 coinchefclaim.xyz
@@ -557,11 +581,13 @@ commentclaim.xyz
 companyconsultpass.site
 compileclaim.xyz
 computesuit.xyz
+connectbusinesssuite.com
 connectingdex.xyz
 connectingstrategytoresults.com
 connectmintseo.com
 connectsswap.xyz
 consentaisuite.xyz
+consulate.live
 consulmanga.xyz
 consulquantum.xyz
 consulrank.xyz
@@ -638,12 +664,15 @@ daemonsuite.xyz
 daikonethereum.xyz
 dangerethereum.xyz
 darkerairdrop.xyz
+dasui82jfsd02ufsf.xyz
 dataledgerbot.xyz
 datasetclaimed.xyz
 datasetensuing.xyz
 datasetpursuit.xyz
 datasetsuites.xyz
 datasetsync.xyz
+dcg-consultant.xyz
+ddokxkb589.cc
 de-appsuite.online
 dealresolver.xyz
 dealsync.online
@@ -677,6 +706,7 @@ digitsethereum.xyz
 direitodefamiliarpfconsultoria.online
 disclaimport.xyz
 djelmonoseed.xyz
+dk-suitecopilot.site
 docsyncdesk.xyz
 docsyncgrid.xyz
 doctoraisuite.xyz
@@ -848,6 +878,7 @@ ethereumworse.xyz
 ethereumwright.xyz
 ethicsresolver.xyz
 evergreenledger.shop
+everwisecu-claims.sbs
 evolvephantom.shop
 examsync.xyz
 exceptethereum.xyz
@@ -916,6 +947,7 @@ gasreclaim.xyz
 gatewayconsultant.site
 gccclaim.xyz
 geishaethereum.xyz
+geiyesulaitangniedun.cfd
 gentleethereum.xyz
 geomapperclaim.xyz
 getnodexa.com
@@ -937,12 +969,15 @@ gpudisclaims.xyz
 gpusullen.xyz
 grade-consult.online
 grammoseed.xyz
+grapeseedcoldpress.shop
 graphicsseed.xyz
 grittypalacehotelandsuites.vip
 growthbridgepartnersboostresults.info
 gtdtysuiojiuhdwqdiqwpj.top
+gteamconsultoria.online
 guiltyethereum.xyz
 h4consultoria.com
+halifaxunclaimedassets.online
 handoffaisuite.xyz
 happyclaims.xyz
 hayesinsulation.online
@@ -1003,6 +1038,7 @@ indexreward.xyz
 indo178sui.com
 indosultan69link.com
 inferencesuits.xyz
+infobinance.online
 iniciarconsulta-30004.net
 insul8now.com
 insulationguard.online
@@ -1026,10 +1062,15 @@ j2lconsulting.com
 janackseed.xyz
 javhqseed.xyz
 jcboseuniversityresult.online
+jcwconsultingus.click
+jcwconsultingus.online
+jcwconsultingus.shop
 jesuisbroke.xyz
 jesusisrealsolana.xyz
 jialingclaim.xyz
 jiangsu17.cn
+jianlunsuigehuafou.cfd
+jiujuzhuajiecunsuika.shop
 jnd42-trend-result.com.cn
 jnd65-result-draw.com.cn
 johnnyseeds.sbs
@@ -1040,6 +1081,9 @@ jsresult.online
 juanitaasullivan.xyz
 jujubeonthepeninsula.site
 juncalconsul.top
+jxpassword.top
+k8consulting.eu
+kabulconsulting.online
 kalyansattamatkaresults.online
 kanalsulut.xyz
 kanglintao18sui.cn
@@ -1062,6 +1106,7 @@ kmljrokxu.top
 knowledgerisk.xyz
 konsultantseo360.pl
 kortingclaim.xyz
+kraken101.cc
 kraken26at.com
 kraken4qzqnoi7ogpzpzwrxk7mw53n5i56loydwiyonu4owxsh4g67yd.info
 krakena.top
@@ -1072,6 +1117,7 @@ kumorirecover.site
 kumorirecovery.online
 kumorirecovery.site
 kyc-okx.com.cn
+kyc-secure.click
 kyc6.cc
 kycaidashboard.xyz
 kycaivoicetalk.xyz
@@ -1185,6 +1231,7 @@ lossrecoveryzone.site
 lotosul.online
 lotteryresult.icu
 lotto-result-today.site
+louisvilleomsconsult.online
 lowcodeclaims.xyz
 loyaltyaisuite.xyz
 ltconsulting.online
@@ -1228,6 +1275,7 @@ medexconnect.xyz
 mediaresolver.xyz
 medicalconsultation5us0109.online
 medtechethereum.xyz
+meetdallashornetsu19.com
 megamarketskyc.xyz
 melior8consultinggroup.com
 memeaptos.xyz
@@ -1248,20 +1296,24 @@ mfbiconsulting.online
 microsoftonedrivesync.top
 migrateunidex.xyz
 mindersuite.online
+minhaborconsulting.xyz
 minimalclaim.xyz
 minimalseed.xyz
 miniswapclaim.xyz
 minkycouturehome.shop
 mintphrases.xyz
+mintstateconsulting.com
 minttokenclaim.xyz
 minutesseed.xyz
 mkkcfkyc.shop
+mmexzozcawokx.shop
 mn2consultoria.com.br
 modelacclaimed.xyz
 modernclaim.xyz
 momentumaptos.xyz
 momentumarbitrum.xyz
 momentumledger.xyz
+mondayconsultai.online
 moneyartclaim.xyz
 monistseed.xyz
 monthsethereum.xyz
@@ -1278,6 +1330,8 @@ musuligroup.site
 musulynbusinesscenter.online
 my-o2capsulebox.com
 mybestclaim.xyz
+myclaim.cloud
+myhairdrop.online
 myhealthsync.link
 myhomeclaim.xyz
 myhomeindexkyc.xyz
@@ -1295,6 +1349,7 @@ naseed.online
 naturalisyncx.site
 nehasareeandsuits.shop
 net03webuseronline.com
+netrewardsstaking.xyz
 netsuite.space
 networkseeds.xyz
 neuroconsults.online
@@ -1311,6 +1366,7 @@ nftvaults.cn
 nightowlsolana.xyz
 ninjasync.site
 ninshuantifahenhasuiniupu.shop
+nlconsulting.xyz
 no7skinconsultation.com
 noblesethereum.xyz
 noclaims.monster
@@ -1335,8 +1391,11 @@ npresultados.site
 nuconsultacenter.site
 nuestrabodaerickycristy.cloud
 nuosui.xyz
+nuzhaishuotunwacinuosui.shop
 nyanpepeonsolana.xyz
 oceanledgerq.site
+oilseedexpeller.shop
+okkxya005.com
 okta333sui.rest
 okx-crypto.com
 okx-wallet.icu
@@ -1344,7 +1403,9 @@ okx7yffdq8ezle5.icu
 okx9111.com
 okxgypk.top
 okxjpn.xyz
+okxmb8plus.com
 okxmq.shop
+okxpxyatu88i.top
 okxwallet.store
 olderethereum.xyz
 oliveandledger.online
@@ -1373,6 +1434,7 @@ outletclaims.xyz
 outmaxseed.xyz
 ozem27-capsules.fr
 paperlesskyc.xyz
+parklandelksu15ahc.com
 passwordord.xyz
 passwordpick.xyz
 passwordtier.xyz
@@ -1405,6 +1467,7 @@ phantomraidexpedition.quest
 phantomrobo.xyz
 phantoms.cfd
 phantomsa.online
+phantomshield.site
 phantomsmoke.shop
 phantomtrip.xyz
 phantomvp.xyz
@@ -1417,9 +1480,12 @@ phrasealpha.xyz
 phrasemap.xyz
 phraseonchain.xyz
 phrasesdeep.xyz
+phrasey.online
 physitalseed.xyz
 phz0jt2csuiv3hb3emrp8ek5d6thfmrc.com
+picangsuijiongraowei.shop
 pickupseed.xyz
+pintusule.fit
 pipelinesuite.xyz
 pjk-consulting.cloud
 placedethereum.xyz
@@ -1455,6 +1521,7 @@ priceconsulting.xyz
 primaryclaim.xyz
 printerclaim.xyz
 prior2ipoconsulting.com
+prism-boundary-sync.site
 proclaimedport.xyz
 projectrecoveryconsultants.org
 projectsseed.xyz
@@ -1507,12 +1574,14 @@ pusulabet5008.org
 pusulabet505.com
 pusulabet8768.com
 pusulabetcanlierisim.icu
+pusulabetgirisadresii2026.com
 pusulabetgirisyap.xyz
 pusulabetguncelgirisi.icu
 pusulabetresmieris.icu
 pusulabett-canli.vip
 pusulabey5006.com
 pusulabonus.pro
+pusulabt-eylulpartner.icu
 pusulagiris2026-guncel.icu
 pusulanet5005.com
 pusulanet5006.com
@@ -1532,6 +1601,7 @@ quicksync.xyz
 quirkycurio.shop
 quotedethereum.xyz
 r360consultoria.com.br
+radiantledgerhub.vip
 radicalseed.xyz
 randomclaims.xyz
 rankconsult.xyz
@@ -1622,6 +1692,7 @@ resultsdoge.xyz
 resultsonchain.xyz
 resultspayment.xyz
 resultstogel99.co
+reta3-capsules.shop
 reverseseed.xyz
 reviewseed.xyz
 reward-theindexfinance.com
@@ -1665,6 +1736,7 @@ rxclaimsguard.xyz
 ryanonsolana.xyz
 sagoronlinemart.top
 sammytheseed.online
+sashasync.cloud
 satoshiclaim.xyz
 sattakingresult.site
 sattakingresult.top
@@ -1691,7 +1763,9 @@ securetoken-hub.com
 security-kraken.com
 seedaemail.shop
 seedautonomous.xyz
+seedbedrows.work
 seedcleaner.online
+seedcleaningmill.shop
 seedidea.shop
 seedmissionairways.online
 seedofsalvation.online
@@ -1702,6 +1776,7 @@ seedream4.xyz
 seedsdegen.xyz
 seedsfarm.xyz
 seedshodl.xyz
+seedsi.xyz
 seedsofhealth.xyz
 seedsports.xyz
 seedwake.xyz
@@ -1716,6 +1791,7 @@ sentinel-consulting.online
 serialethereum.xyz
 servicosdeconsults.site
 sexualairdrop.xyz
+seyricesuleymaniye.k12.tr
 sgeducationalconsulting.site
 sharedseed.xyz
 sharingclaim.xyz
@@ -1726,6 +1802,7 @@ shibaairdrops.xyz
 shibarium-airdrop.xyz
 shootethereum.xyz
 shoreledger.space
+shouganpengliusulounuan.cfd
 showerethereum.xyz
 shuttersseed.xyz
 signchainclaim.xyz
@@ -1744,6 +1821,7 @@ skyclub66.vip
 skyconsultancymalta.com
 skycoroofing.online
 skycounselor.xyz
+skycraze.shop
 skycustodian.xyz
 slotjekclaim.xyz
 slotsule66.xyz
@@ -1836,6 +1914,7 @@ sorasolana.xyz
 spaceacclaim.xyz
 spacephrases.xyz
 spatialclaim.xyz
+speedbeveledger.shop
 spincrypto-bonus.skin
 spincrypto-promo.com
 spincrypto-promo2.com
@@ -1848,11 +1927,13 @@ sportsluckycharms.online
 spuemr0kxg.cc
 squibbleseed.xyz
 sraconsulting.xyz
+srmconsultoria.online
 stableclaimed.xyz
 stablememeseed.xyz
 stakecampseed.xyz
 stakepromoted.xyz
 stakeresolved.xyz
+stakevault1512.tech
 stalbridgeconsulting.co.uk
 stanceethereum.xyz
 standsethereum.xyz
@@ -1863,12 +1944,16 @@ startupclaim.xyz
 stockinsulin.xyz
 stocksseed.xyz
 stocksullen.xyz
+stratfordexitsecurities.biz
+streamsync.space
 strongseed.xyz
 struckethereum.xyz
 studioresolver.xyz
 stylesethereum.xyz
 su1597.com
+subsultvexaty.click
 sugui-suits.shop
+sui7tu.cn
 suiancrm.xyz
 suiblock.xyz
 suicatherabbit.xyz
@@ -1905,6 +1990,7 @@ suitsrobotaxi.xyz
 suitsstocks.xyz
 suiundeads.xyz
 suiv3793927.pro
+suivi-invest.click
 suiya.vip
 suizhoudanbao.online
 sukaplayseed.xyz
@@ -1921,6 +2007,7 @@ sulebet.buzz
 sulek.top
 sulekav.top
 sulemanautomate.site
+sulepgpg.live
 sulesahan.online
 suleymaniyekurufasulye.xyz
 suleymantuna.xyz
@@ -1946,6 +2033,8 @@ sulphuredbacypotesize.xyz
 sultan-koin99.xyz
 sultan07.org
 sultan178.cam
+sultan188gg.dev
+sultan188gg.host
 sultan197.biz
 sultan33az.site
 sultan77.asia
@@ -1962,6 +2051,7 @@ sultan88daftar.online
 sultan88s.cloud
 sultan899slot.com
 sultan99.vip
+sultanape.site
 sultanbeat77.xyz
 sultanbet.shop
 sultanbet1177.com
@@ -1985,6 +2075,7 @@ sultantoto003.shop
 sultantotop12.com
 sultonn.shop
 sultra.site
+sultry.cc
 sultryspark.cfd
 sulutsaranamandiri.online
 summitseed.xyz
@@ -1996,6 +2087,7 @@ supportcoinbase-ie.info
 supportedmint.xyz
 supportedswap.xyz
 supportersdex.xyz
+supportwallets.com
 sushiclaims.xyz
 susu111.com
 swapcambridge.xyz
@@ -2023,6 +2115,7 @@ syncinply.xyz
 synclogic.link
 syncmerch.xyz
 syncparser.xyz
+syncpeople.space
 syncresolver.xyz
 syncrlineariz.sbs
 syncryptominer.xyz
@@ -2043,6 +2136,7 @@ taxledgerview.xyz
 teameseed.xyz
 telehealthglp1consultations.com
 tennisseed.xyz
+territorialseedplant.shop
 testedethereum.xyz
 thankseed.xyz
 thcsul215.vip
@@ -2066,6 +2160,8 @@ ticketseed.xyz
 tieredjumpsuit.shop
 timerseed.xyz
 tinykyc.xyz
+tipikoronline86.my.id
+tipkoonsolana.top
 titledethereum.xyz
 titlesethereum.xyz
 tmsulassistencia24h.com.br
@@ -2077,6 +2173,7 @@ tokenconsulting.online
 tokenlabclaim.xyz
 tokenpromoted.xyz
 tokensullivan.xyz
+tokenvault.co
 tokosulfa.shop
 tokx-v66sports.com.cn
 tomohiconsulting.online
@@ -2085,6 +2182,7 @@ totalrecovery.xyz
 totolistseed.xyz
 towboatseed.xyz
 towngatesuitess.click
+towrecover.site
 tr-pusulabet1110.com
 traderecover.xyz
 traderecovered.xyz
@@ -2109,6 +2207,7 @@ trustwallet-pay.site
 trustwallet.website
 trustwalletcrypto.cards
 trustwalletethereum.com
+trustwalletpayment.top
 trustwallets-card.com
 trustwallets.store
 trustwalletsupport.trade
@@ -2124,6 +2223,7 @@ twt-claim.cfd
 typesethereum.xyz
 u2consulting.com.tr
 ufaronin168.com
+unclaimedbaggage.shop
 unepicironing.cfd
 unionethereum.xyz
 uniswap-desktop.com
@@ -2146,6 +2246,7 @@ utchiaseedoil.shop
 utdateseedoil.shop
 uthempseedoil.shop
 uvurledger.icu
+ux7suit.com
 uxsynckit.xyz
 uxsynclens.xyz
 uxsyncmap.xyz
@@ -2207,13 +2308,16 @@ weareseeds.shop
 weatherclaim.xyz
 web3-okx.digital
 web3nodes.xyz
+web3truesecurity.org
 webhookx.shop
+websule.shop
 weriverbridgeconsulting.com
 whatisanodeincrypto.xyz
 whatissuicrypto.xyz
 whileethereum.xyz
 whoseethereum.xyz
 wilderconsult.online
+wildseedfarmsoutdoor.shop
 willowledger.site
 wilsafeconsultoria.online
 winterethereum.xyz
@@ -2233,21 +2337,25 @@ x20kx.top
 x30kx.top
 x50kx.top
 xclaimdrops.xyz
+xiaosuisefuziwengdu.shop
 xiaoyouseed.xyz
 xisui413.cn
 xn--------5e0tx3ak04astlcwa68bp72ad7j5b376kf47c.shop
 xn------nzebbbfkc9bssl5cxdukegifjif4cm7a.online
 xn-----7kcbajsul6cdpdbzefh6g.xn--p1ai
+xn-----9kcbbwnfacshnuej3dh7a.online
 xn-----ctdabnfs2pekqkc5d6a.site
 xn----2x5ei7jca45h66vyfs37a4mx9hus5pga.site
 xn----2x5ew7cca415b67kyfs37a4mxczofa554e.site
 xn----2x5ez8letcca428cyfs37ao3bea257wvjy.site
 xn----2x5ez8lsvcca896cyfs37a8wlea940lv1z.site
+xn----7sbabaid7d8bkv.su
 xn----7sbabcj2bxmv9a7bi.online
 xn----7sbatwkmlmfffn.su
 xn----7sbbq1ah7j.space
 xn----7sbbvuiuhnk7l.online
 xn----7sbcmmzetbno1p.site
+xn----7sbdqpr8ad2ait.space
 xn----7sbufjqz6aw.online
 xn----8sbecm1dqm.online
 xn----8sbeortlvbgl.online
@@ -2265,6 +2373,7 @@ xn--0ix082b.top
 xn--0jsv32d.top
 xn--0kq184d.top
 xn--0nspkx02einb.vip
+xn--0tso11a.xyz
 xn--0zrx26j.top
 xn--10v44z.top
 xn--11v.cc
@@ -2291,10 +2400,12 @@ xn--1ct103c.top
 xn--1jq441m6jgqa.xyz
 xn--1jqq77o.top
 xn--1kq379b.top
+xn--1kqr09bgu2bzba.top
 xn--1lq57w.top
 xn--1lqu4ab3euy8aud7b.top
 xn--1ltq8u.top
 xn--1rw43r.cc
+xn--1rw853b.cc
 xn--1rwv01g.vip
 xn--1rwy34h.vip
 xn--1uv403g.top
@@ -2302,12 +2413,15 @@ xn--2-dtbjm3bg3h.shop
 xn--2277-kd5fw3a03yc1v.site
 xn--26q41d.top
 xn--28sy03j.top
+xn--299a9h35r28euq8a4eg.site
+xn--299amk17hn6a50niurf2f8mcmv9cra.shop
 xn--299aqd.site
 xn--299aqd.xyz
 xn--29ss8w.xyz
 xn--29sx69m.top
 xn--29t20b.top
 xn--29ts22l.xyz
+xn--2e0b30gosb1yg95g3zd7uhp7nbzpchp.xyz
 xn--2hvrv.ws
 xn--2j1b4r03l0mi8pal44c.shop
 xn--2j1b630bq8j42a.cc
@@ -2318,6 +2432,7 @@ xn--2os190a.top
 xn--2os250g.top
 xn--2p1a.cc
 xn--2q1b16p8rchtag0q.shop
+xn--2ssqfz39cp9r.cc
 xn--2ssu0gxz3c.cc
 xn--2vqu60a.top
 xn--30r643j.top
@@ -2328,8 +2443,10 @@ xn--369au5j901a.online
 xn--37qa.xyz
 xn--3bsr6cz36asl2b.cc
 xn--3dsw9hh27ba.cc
+xn--3e0bo78adibg1e7kp5bfybu30abqr.shop
 xn--3e0bu9yg6ejmd5vccsy.site
 xn--3iqt52e.top
+xn--3iqw84b.top
 xn--3iqy06q.top
 xn--3o5auz.top
 xn--3p6a7b.top
@@ -2350,6 +2467,7 @@ xn--4gq579fepi.cc
 xn--4gqv42m.top
 xn--4gqy79c.top
 xn--4gqz13ghwr.vip
+xn--4i2b13rfzcs6al8p8nbk62aa.shop
 xn--4k0bj5dw4nm9e7uh.shop
 xn--4kqu26p.top
 xn--4kru18i.top
@@ -2369,9 +2487,12 @@ xn--5brv17f.online
 xn--5ct115a.top
 xn--5ct548k.top
 xn--5dy.top
+xn--5ht388b.top
 xn--5muy78d.top
 xn--5rtn43d.shop
 xn--5rtq32d.vip
+xn--5usa497hrm3b.vip
+xn--6-nj2b.icu
 xn--65q67bozo.cc
 xn--66to55dnqu.xyz
 xn--68jxa8g6ayiyhzf2b8012ed45bosf2l5c63kxwi.site
@@ -2418,11 +2539,14 @@ xn--80aaag0afc1ar3bd5c8g.su
 xn--80aaap7beodrlp.su
 xn--80aabbheoaubagqlsscfg9bged7bc0h.site
 xn--80aabbm3bkpe4g.site
+xn--80aaghafchpcco3au8xh.online
 xn--80aamw3a3e.online
 xn--80aaobashdpq2acicm7h6e.space
 xn--80ab0absabn0e.shop
+xn--80abd5ajmv1b.site
 xn--80acgfbsl1azdqr.space
 xn--80ackyorfc.shop
+xn--80aclb4abbg6cxf1a.shop
 xn--80acmmo3ayw.su
 xn--80actakkynch2a0a.space
 xn--80adak.shop
@@ -2443,6 +2567,7 @@ xn--80aqdb0al.su
 xn--80aqfw.su
 xn--80asehdb.su
 xn--80aslshr.su
+xn--82c6bntt2k3a1c.online
 xn--82w412g.top
 xn--863a93a.top
 xn--88-3qi7ck6k7a7h8d.xyz
@@ -2464,6 +2589,7 @@ xn--9fr81m.top
 xn--9fr931g.top
 xn--9fv32l1oypyk.top
 xn--9hu07z.top
+xn--9i1b69bzz4a.cc
 xn--9i1bjk9y46g63k45dd8dr4klras1gk98bkma.site
 xn--9iq8nh0wbta.space
 xn--9kq023b.cc
@@ -2481,6 +2607,8 @@ xn--9rqw2uho1a.top
 xn--9rzu3m.top
 xn--9sun60e.cc
 xn--9swr8e.cc
+xn--9w3b19kuj49jbzo.cc
+xn--9w3bn7k89fi1g.cc
 xn--9y2boqm71a68i.icu
 xn--ai-2w2cz34l.top
 xn--ai-8o5cj23l.top
@@ -2499,15 +2627,18 @@ xn--b1adhh.su
 xn--b1aedfedwqbdfbnzkf0oe.online
 xn--b1afkgfscrj.online
 xn--b1aga8b7a.online
+xn--b1agaape0akrfgn.site
 xn--b1agaxhgby5h.site
 xn--b1aghecxcaeo1a2assh1d.su
 xn--b1agybjr2e.online
+xn--b1agzdeeobb1c.shop
 xn--b1apfibqq.xyz
 xn--b1aqdaiecp.online
 xn--bbt120bi8a.site
 xn--binme-8ta.site
 xn--bn1b82m7xeba53i15lmsfx7byu4c.shop
 xn--bostadssk-77a.online
+xn--bro-tla.online
 xn--bromaterial-thb.online
 xn--btt0w186a.site
 xn--btv178e.top
@@ -2515,6 +2646,8 @@ xn--bwv853a.top
 xn--bxym69c.xyz
 xn--bzw76c.cc
 xn--c1adkkdfjbp1a4l.online
+xn--c1aijpbgckp.space
+xn--c1aijpbgckp.su
 xn--c1ajagfdlbtv6l.site
 xn--c5w691d.top
 xn--c5w74x.top
@@ -2525,6 +2658,7 @@ xn--caagastos-r3a.online
 xn--cancn-bva.top
 xn--cdigodaexcitao-2hb7d5k.site
 xn--cdigodelacruzdivina-04b.site
+xn--cdu74jpxh.site
 xn--cer524aeyb6u0b.cc
 xn--cer983a7vw.cc
 xn--cerr82gefjjyt.cc
@@ -2560,6 +2694,7 @@ xn--descuento-empleadosluz-campaa2026-ufd.online
 xn--dexscrener-jnb.com
 xn--dfvq8z1nnz8i.icu
 xn--djr069b.top
+xn--djrq0r.top
 xn--dkrp89f.cc
 xn--dkrt1ls92a4qh3z4a.icu
 xn--dkw.top
@@ -2570,6 +2705,7 @@ xn--domtica-n0a.vip
 xn--dondehaypea-beb.site
 xn--dorf-tlpel-deppen-4zb.online
 xn--dpq60wt8be34d.cc
+xn--dqr60ge2rdvf.cc
 xn--drrx05k.cc
 xn--dtn-consultoriaeformao-x4b9g.com
 xn--dvsq4q.top
@@ -2595,6 +2731,7 @@ xn--esquemaeltriconotebook-j8b.shop
 xn--ess204b.top
 xn--essw91a.top
 xn--ettyj.vip
+xn--ewuy08g.top
 xn--extoq.top
 xn--eynk-x6b.online
 xn--f7uq30d.top
@@ -2610,10 +2747,12 @@ xn--feu92h.top
 xn--feuo67g.top
 xn--fhq482e.top
 xn--fhq682dd4aez6cb3k.top
+xn--fhqx4ya090f.vip
 xn--fidle-6ra.online
 xn--filsdefranoisdesales-d1b.online
 xn--fiq06jptdd5tkh4awffwn0b.xyz
 xn--fiq333i.top
+xn--fiq53lw6j7ocjvl.xyz
 xn--fiqs8srud77c25m753d.click
 xn--fiqv36o.cc
 xn--fjq20t9oc.top
@@ -2630,12 +2769,14 @@ xn--ftwo27b.vip
 xn--fvrr61c.top
 xn--fxw6sp57g.site
 xn--g0s.cc
+xn--garondhonneur-kgb.shop
 xn--geww54a.top
 xn--ghqx2k09hv1k.xyz
 xn--gislainealmeidaespaodabeleza-5pc.online
 xn--gmq39dwv0e.cc
 xn--gmq92k490aj81a.cc
 xn--gmqq14m.top
+xn--gmqr1syod89c15m83jp4psft5q8a.online
 xn--gmqz0q91e08qekv.top
 xn--gq0a.cc
 xn--gstraodigital-0eb3d.online
@@ -2647,6 +2788,7 @@ xn--gzr24u.cc
 xn--h0t734a6rf.site
 xn--h1aellf.online
 xn--h1aiq.online
+xn--h49a2puyu95asvb83oa70p9wxdyat2k.shop
 xn--h5q74x.top
 xn--h5sx33g.cc
 xn--h6qv61aevo8kkb68a.icu
@@ -2660,6 +2802,7 @@ xn--h9tz6v.cc
 xn--hc0b47sgnksa173l.site
 xn--hd0bj9rg5a22u8lew7bd6aw5gxpobxn2nb.site
 xn--hoq557cv8jj4x.top
+xn--hpqu15e.xyz
 xn--hrspieler-07a.site
 xn--hrspieler-07a.space
 xn--hs0by0egti36g95iosr.online
@@ -2681,6 +2824,7 @@ xn--ixwx2w.top
 xn--j0vn3y.top
 xn--j0vx3i.top
 xn--j1aefbnc.space
+xn--j1t619j.top
 xn--j1t945h.top
 xn--j6q22b9zcc0d10zph6f.shop
 xn--janetyjess-vdb.site
@@ -2694,6 +2838,7 @@ xn--jpr017m.top
 xn--jvrw50bbx2bnqa.site
 xn--jxsa3831c.top
 xn--k1ton.top
+xn--kaysm-p4ab.shop
 xn--kecorenbaymakdemirdokumteknik-2le.online
 xn--kfsr5bzz9anr2a.top
 xn--kiv765b.top
@@ -2780,6 +2925,7 @@ xn--newr48a7ydpt0a.top
 xn--njtw21bgia.site
 xn--nkv.top
 xn--nkvo39h.icu
+xn--nkvv82i.top
 xn--nmzs07b.top
 xn--nn8hrx.to
 xn--nrq39dcx0e.online
@@ -2803,6 +2949,11 @@ xn--officals-61a.site
 xn--oh5b97e3zcb6cj6n.shop
 xn--oi2b30g3ueowi6mjktg.live
 xn--oi2b30g3ueowi6mjktg.online
+xn--ok0bp6enub36k65c4ylw7k3tn84kcue.xyz
+xn--ok0bp6eoub26k65cg1cj1kq8mw1t2pk.xyz
+xn--ok0bp6eoubmybbxf2qjc2am80af0n7j7a.xyz
+xn--ok0bp6epub1yg95gbyat1xqwmnvau18h.xyz
+xn--ok0bp6epub2yg7zgjrcg1ko8m533a55a.xyz
 xn--okq6e.shop
 xn--omur55b.top
 xn--omw489e.top
@@ -2815,6 +2966,7 @@ xn--orocaf-gva.shop
 xn--osvr7h.cc
 xn--ot8h.to
 xn--ouwy77e.top
+xn--owt468e.vip
 xn--owt49t.icu
 xn--owtx70k.top
 xn--ozsy38a11bzwez32dwve.top
@@ -2838,6 +2990,9 @@ xn--psso91c8nv.ws
 xn--pusulabt1175-7d6f.com
 xn--pvr.cc
 xn--q1aa9a.shop
+xn--q20bk6b23x7rdgoa6ju8o.shop
+xn--q20bz2d3b51vbma277l.shop
+xn--q3ca0azb7ad4n.online
 xn--q3crbrtpf6a.xyz
 xn--q8s9q.top
 xn--qbtq5wv1f.site
@@ -2846,13 +3001,16 @@ xn--qfv854i.top
 xn--qgs824a.top
 xn--qhv77ojx0b.site
 xn--qizof.top
+xn--qlqw70c.top
 xn--qq-bo1dt9uby6bkzh.top
 xn--qqx201h.top
 xn--qrqq6k264d.cc
 xn--qsy97c.top
 xn--qubacano-c1a.shop
+xn--qwt.cc
 xn--qxzv44b.top
 xn--r8j0b5exa.online
+xn--raposo-7ta.shop
 xn--rc1au3p.top
 xn--remix-fl6ho481b.icu
 xn--rf5ba19d95v.cc
@@ -2893,7 +3051,9 @@ xn--swvs9g.top
 xn--t2tu51c.top
 xn--t2tu8s.top
 xn--t4r801b.top
+xn--t8jk7ox243a.shop
 xn--t8qp0m.top
+xn--t8qp52j.top
 xn--t8qq04o.top
 xn--tfs.xyz
 xn--tiq143m.top
@@ -2901,8 +3061,10 @@ xn--tjur0z.top
 xn--tkr630l.top
 xn--tlvision-ip-bbbb.live
 xn--toqq46etig.site
+xn--torq53h.top
 xn--tosp9l.top
 xn--tp2at86b.cc
+xn--tqq120d0krkua.cc
 xn--trsorfeminin-ceb.online
 xn--truo8k.top
 xn--tryu85e.top
@@ -2922,6 +3084,7 @@ xn--ukq5h.shop
 xn--ungeschnt-67a.online
 xn--v3c4a.cc
 xn--v52b19jh8ekzb.icu
+xn--v69av9hoqb91g57c6zjetiqslwzq61m.xyz
 xn--v6u.top
 xn--v6u480f.top
 xn--v6u90z.top
@@ -2953,6 +3116,7 @@ xn--vws37c068c.top
 xn--vws37cy51b.vip
 xn--vwsv2b.xyz
 xn--vwsxb20i.vip
+xn--vxup8b8oe44k.cc
 xn--w0wu46g.top
 xn--w1v725c.top
 xn--w1vu10a.top
@@ -3001,6 +3165,7 @@ xn--ygvp35h.top
 xn--yhq5sub99l61d4jy0c2x7b19qbp4ah1sir9b62ya2day04b.top
 xn--yhq868e96h.site
 xn--yitr9f.xyz
+xn--yivz84b.vip
 xn--ykqg85d51gsow7d1zwwnb6n04nfzpx0br2l71fkp9bnrtz1owwqtqar331a.xyz
 xn--ylvn2o.cc
 xn--ynv.top
