@@ -2,8 +2,8 @@
 # Feed Name: Crypto NRD Threat Feed
 # Maintainer: HackProtect Labs (@HackProtectLabs)
 # Classification: TLP:CLEAR
-# Last Updated: 2026-11-08 08:43:25 UTC
-# Total Active Domains: 13264
+# Last Updated: 2026-11-09 09:23:01 UTC
+# Total Active Domains: 13411
 # Repository: https://github.com/HackProtect-Labs/crypto-nrd-feed
 # Detection Model: Multi-Vector CTI Scoring (Typosquat + Homoglyphs + Combosquat + TLD Scoring)
 # Retention: Historical accumulation enabled (strictly append-only).
@@ -227,6 +227,7 @@
 783213-binance.com
 792517-binance.com
 7bridgesconsultancy.com
+7kyc774.xyz
 7okx6372.cfd
 7pusulabet.com
 7wonderstravelconsultancy.com
@@ -256,6 +257,7 @@
 948372coinbase.com
 951835-binance.com
 958396binance.com
+95kyc1ti.xyz
 98529-kucoin.com
 98yasuigcqw.monster
 993829coinbase.com
@@ -550,6 +552,8 @@ airdropgraduate.xyz
 airdropgrounds.xyz
 airdrophydrogen.xyz
 airdrophygiene.xyz
+airdropkar.xyz
+airdropkarts.xyz
 airdropking.xyz
 airdroplip.xyz
 airdroply.live
@@ -880,6 +884,7 @@ atkycc.site
 atlantaledger.xyz
 atlas-solana.xyz
 atomicwalletsupport.email
+atsui-cosme.xyz
 attractairdrop.xyz
 atwoodconsulting.online
 aubreyethereum.xyz
@@ -995,6 +1000,7 @@ bangkokrecoveryguide.fit
 bangseed-app.site
 bangwosuijixuanyizhu6e.com.cn
 banquetairdrop.xyz
+bansosledger.icu
 baozaoshaonv10-16suipanniqiduojiuyic.org.cn
 baozaoshaonv10-16suipanniqiduojiuyici.org.cn
 baozhaoshaonv10-16suipanniqiduojiuyici.baby
@@ -1032,6 +1038,7 @@ bayconsulting.shop
 bayconsultingtt.site
 bbconsulting.shop
 bchconsultants.xyz
+bd1consulting.net
 bdseeds.cloud
 bdvconsultarahora.xyz
 beacon-ledgervance-gb.site
@@ -1187,6 +1194,7 @@ bizsolana.xyz
 bk2consulting.com
 blabconsultants.xyz
 blablapresale.xyz
+blackdogconsulting.online
 blacksoilconsultancy.online
 blassuing.xyz
 blastseed.xyz
@@ -1207,12 +1215,14 @@ bloomsairdrop.xyz
 blowerdoorgroningen.online
 bltget.top
 bluegrassultraso.click
+blueskyconsultingfirm.com
 bluestairdrop.xyz
 bluevaultdexeris.net
 bluewallethelp.com
 blunderairdrop.xyz
 blurconsultant.xyz
 bluwhale-claim.xyz
+bmhsu17w.top
 bnplconsultant.xyz
 bnpybcwudh5igfuokxrvl8dxm1nuxus1.org
 boabpowerconsulting.online
@@ -1296,6 +1306,7 @@ brevisairdrop.xyz
 brevityethereum.xyz
 bridalresults.xyz
 bridgebetoken.xyz
+bridgecapsule.com
 bridgeconsultantllc.com
 bridgeconsulting-it.com
 bridgeconsulting.io
@@ -1330,6 +1341,7 @@ brookletledger.shop
 browseedge.xyz
 browserclaims.xyz
 browseseed.xyz
+brsul99.com
 bruhonsolana.xyz
 brunosolana.online
 bruteconsulting.xyz
@@ -1410,6 +1422,7 @@ caesarsethereum.xyz
 caixinhasync.click
 cakeseed.xyz
 calmledger.space
+calmriseed.shop
 cambriaethereum.xyz
 cambridgesprayfoaminsulation.com
 cambridgestake.xyz
@@ -1448,6 +1461,7 @@ capsuletrippy.xyz
 capsulewardrobe.online
 capsulewoodland.shop
 capsulewriting.xyz
+capsulo.xyz
 captainairdrop.xyz
 captconsulting.xyz
 captionethereum.xyz
@@ -1537,6 +1551,7 @@ cellbridge-consulting.com
 celldexclassactionlawsuit.com
 celldexclassactionlawsuit.it
 celldexclassactionlawsuit.org
+cenorasuites.online
 centralairdrop.xyz
 centralcapsule.xyz
 centralconsult.xyz
@@ -1636,6 +1651,8 @@ claim-flarenetwork.icu
 claim-fundz.online
 claim-hub.xyz
 claim-hyperfoundation.xyz
+claim-it.space
+claim-kupdc.xyz
 claim-laptoptoken.com
 claim-manad.xyz
 claim-mirexnetwork.xyz
@@ -1644,6 +1661,7 @@ claim-netnetcapital.icu
 claim-nodeops.xyz
 claim-nova.xyz
 claim-omni.xyz
+claim-sharpen.xyz
 claim-shr.live
 claim-stake.net
 claim-taxreturn.top
@@ -1868,6 +1886,7 @@ codexbridge.org.uk
 codexphantom.shop
 codingclaim.xyz
 coecosulo.site
+coesulhortos.top
 cofactorsuite.buzz
 coherenceconsulting.site
 coilconsultants.xyz
@@ -2024,6 +2043,7 @@ consultaitech.online
 consultajur1dica.com
 consultaloalinstante-porinternet.sbs
 consultamax.online
+consultamercosul.online
 consultamplify.work
 consultancyting.site
 consultandoanalise.site
@@ -2361,6 +2381,7 @@ cryptonodes.store
 cryptopromoted.xyz
 cryptorewardfree.com
 cryptosaferecoverycopy.com
+cryptosecurity.cz
 cryptosuiteapp.xyz
 cryptosupporthelp.com
 cryptosynchoronizer.online
@@ -2430,6 +2451,7 @@ daddyseed.xyz
 daemonsuite.xyz
 daikonethereum.xyz
 dailynodex.net
+daiwanzengsuinatemuniaoang.sbs
 dalinbussolana.online
 danceconsultant.xyz
 danceconsulting.xyz
@@ -2460,6 +2482,7 @@ datasetpursuit.xyz
 datasetsuites.xyz
 datasetsync.xyz
 datasyncmint.com
+datasyncpro.online
 datboisolana.xyz
 datconsulting.xyz
 dateconsultants.xyz
@@ -2715,6 +2738,7 @@ drummerledger.xyz
 dryairdrop.xyz
 dryresults.xyz
 ds44-suit.cl
+dsuiwj56.shop
 dtogelclaim.xyz
 dualclaims.xyz
 dualproton.xyz
@@ -3264,6 +3288,7 @@ filmedethereum.xyz
 finance-dex-cdn-secure-api-gateway.cloud
 finance-edge-swap-app-auth.cloud
 financesuited.xyz
+financialconsultinghelpcenter.com
 financialledger.xyz
 financialsuite.work
 financingledger.xyz
@@ -3436,6 +3461,7 @@ gazeconsultants.xyz
 gc-consulente.online
 gccclaim.xyz
 gcm0kx1c.vip
+geiangmiancengsuifanshei.shop
 geishaairdrop.xyz
 geishaethereum.xyz
 geiyesulaitangniedun.cfd
@@ -3484,6 +3510,7 @@ gisagmaps-sync.shop
 giveawayledger.xyz
 giveresult.xyz
 gjuresult.online
+gkkvs-claim.xyz
 glacierconsultinggroup.online
 glamourboutiquesuli.shop
 glanceairdrop.xyz
@@ -3574,9 +3601,11 @@ grovesolana.xyz
 growboxsuite.online
 growconsult.xyz
 growconsultants.xyz
+growthbridgeconsultants.com
 growthbridgepartnersboostresults.info
 growthconsult.xyz
 growthconsultusa.shop
+gsuit123.xyz
 gta6presale.live
 gtdtysuiojiuhdwqdiqwpj.top
 gteamconsultoria.online
@@ -3751,6 +3780,7 @@ hotlawsuit.xyz
 houseofsultry7.com
 housepursuit-jamin777.online
 housingarbitrum.xyz
+howconsultoria.click
 hrsynckit.xyz
 hscresult2026.net
 hsu174.vip
@@ -3785,6 +3815,7 @@ i0kx721z.top
 i26uexh7fjhchrgdaemsu1d5oyq8cwiv.com
 i2ce-consulting.xyz
 i4pconsulting.com
+i9fdconsultoriacontabil.com
 ic1sulmona-edu.it
 icelandethereum.xyz
 iceseed.xyz
@@ -3877,6 +3908,7 @@ instantseed.xyz
 insul8now.com
 insulationcontractorsbrplus.click
 insulationguard.online
+insulationhelp.co.uk
 insulationprobrazilpro.click
 insulaxbd.shop
 insulinassets.xyz
@@ -3886,6 +3918,7 @@ insulinmanga.xyz
 insulinmobile.xyz
 insulinorm.xyz
 insulinquant.xyz
+insulinreset.online
 insulinrouter.xyz
 insulinschool.xyz
 insulinstation.xyz
@@ -3973,6 +4006,7 @@ janackseed.xyz
 jandrasync.shop
 japanconsultant.xyz
 japanese3dmodel.xyz
+jartpconsultancyltd.online
 jatkycb.live
 javhqseed.xyz
 jazzledger.xyz
@@ -3997,6 +4031,7 @@ jiangsu17.cn
 jianlunsuigehuafou.cfd
 jiasula.shop
 jieyanangweidongsui.cfd
+jingrensuipangmengzhaole.shop
 jiujuzhuajiecunsuika.shop
 jj3result.com
 jmexc.top
@@ -4302,6 +4337,7 @@ lasersairdrop.xyz
 lastdietconsultancy.online
 lateconsultant.xyz
 lateledger.xyz
+latonyasalonsuites.shop
 latticeairdrop.xyz
 laughconsulting.xyz
 lavishairdrop.xyz
@@ -4706,6 +4742,8 @@ matchconsulting.xyz
 matchpassword.xyz
 matedconsulting.xyz
 matkaresultapi.online
+matsui-az.cfd
+matsui-y.cfd
 matsuidogs.shop
 matterethereum.xyz
 mattersledger.xyz
@@ -4830,6 +4868,7 @@ milesconsultant.xyz
 milesolana.site
 milessoftsuite.shop
 milkycf.monster
+milkycloud.top
 millionconsults.xyz
 mindconsultants.xyz
 mindersuite.online
@@ -5189,6 +5228,7 @@ offers-trustwallet.com
 offersairdrop.xyz
 officialsolana.xyz
 ogconsulting.xyz
+ogiwsul.shop
 ohiosync.top
 oilseedexpeller.shop
 okayconsultants.xyz
@@ -5207,6 +5247,7 @@ okx369.com
 okx7yffdq8ezle5.icu
 okx88.net
 okx88x.cam
+okx9-6okx.xyz
 okx9111.com
 okx962.com
 okxguanwg3o.org.cn
@@ -5214,6 +5255,7 @@ okxguanwglanjie7z.org.cn
 okxgypk.top
 okxh.top
 okxhh.online
+okxift21.pro
 okxjpn.xyz
 okxmb8plus.com
 okxmq.shop
@@ -5722,6 +5764,7 @@ policeseed.xyz
 policiesledger.xyz
 policyclaimdata.xyz
 polisseed.xyz
+polisync.online
 polyclaim.xyz
 polygon.monster
 polygon3d.us
@@ -5907,6 +5950,7 @@ polygonstation.shop
 polygonstranger.xyz
 polygonstreams.xyz
 polygonstruggle.xyz
+polygonstudio.shop
 polygonsupply.xyz
 polygonsurvey.xyz
 polygonsurveys.xyz
@@ -6120,6 +6164,7 @@ psconsulting.shop
 psui.cc
 psuiv.cfd
 psul-k1sport.com.cn
+psychsrvclmosui.shop
 pu-results.online
 pubconsultants.xyz
 publishclaim.xyz
@@ -6215,12 +6260,15 @@ pusulabet5146.com
 pusulabet5157.com
 pusulabet5200.com
 pusulabet5201.com
+pusulabet5630.com
 pusulabet5727.com
 pusulabet6016.com
 pusulabet6017.com
 pusulabet6019.com
 pusulabet6022.com
 pusulabet6026.com
+pusulabet6035.com
+pusulabet6036.com
 pusulabet8768.com
 pusulabetanlikgiris.icu
 pusulabetcanli.xyz
@@ -6259,6 +6307,7 @@ pusullabtt-resmii1.net
 pusullaturkiye2026.com
 pusulsbet5024.com
 pusulsbet5028.com
+pusulsbet5034.com
 pusulya.online
 pwrecovery.online
 pyrosolana.site
@@ -6275,6 +6324,7 @@ qqeconsultants.xyz
 qqsultan777asik.shop
 qsuicqv.top
 qualityresult.xyz
+qualitysuite360.tech
 quantconsult.click
 quantconsultjr.click
 quantisync.shop
@@ -6422,6 +6472,7 @@ recoverydman-tv.xyz
 recoveryenergy.xyz
 recoveryexploit.xyz
 recoveryfinder.xyz
+recoveryfirst.space
 recoveryindex.xyz
 recoverymaker.xyz
 recoverymedtech.xyz
@@ -6812,6 +6863,7 @@ royalseedone.online
 royvirasuite.space
 rpcconsultant.xyz
 rpsconsulting.online
+rr-seedshop051.xyz
 rr4consulting.com
 rsconsult.shop
 rsiconsult.click
@@ -6909,6 +6961,7 @@ schoolsledger.xyz
 schoolsync.live
 scinovoconsultinz.site
 scipiospqrconsulting.online
+scnqllcasuipty.shop
 scopesync.cc
 scoreairdrops.xyz
 scoreconsultant.xyz
@@ -7065,6 +7118,7 @@ seedpackets.shop
 seedpact.xyz
 seedpaper.site
 seedpeace.online
+seedphilia093.icu
 seedplan.xyz
 seedpost.online
 seedprism.xyz
@@ -7642,6 +7696,7 @@ solanaroadway.xyz
 solanarobottaxi.xyz
 solanaroute.xyz
 solanart.to
+solanas.online
 solanascenario.xyz
 solanascientist.xyz
 solanascorpion.xyz
@@ -8051,6 +8106,7 @@ suiterelief.online
 suiteroute.cc
 suites2catherine.com
 suites3dprinter.xyz
+suitesat5thandidaho.com
 suitesbarcelona2026.net
 suitescompute.xyz
 suitescout.shop
@@ -8113,6 +8169,7 @@ suivis47545.pro
 suiwallet.xyz
 suiwan.online
 suiwo.cloud
+suiwuwenhua.online
 suixfoz.top
 suixin76.com
 suixin8.cn
@@ -8123,6 +8180,7 @@ suiygou.xyz
 suiyigou.xyz
 suiyiting8.com
 suiyixing.top
+suiyuanyu.top
 suiyue.shop
 suiyueling.xn--5tzm5g
 suiyueyouqingshi30ji.baby
@@ -8374,6 +8432,7 @@ sultantoto-promo.com
 sultantoto0.com
 sultantoto003.shop
 sultantoto11.com
+sultantoto44.com
 sultantotop12.com
 sultantotop15.com
 sultanwintop.xyz
@@ -8589,6 +8648,7 @@ taxesresolver.xyz
 taxiacclaimed.xyz
 taxidisclaims.xyz
 taxirecovering.xyz
+taxleadershipconsultancy.online
 taxledgerview.xyz
 tclaimrewards.site
 tdconsulting.shop
@@ -8619,6 +8679,7 @@ teserisync.shop
 testconsultants.xyz
 testedethereum.xyz
 testelojaintegradaclaim3.online
+tesuidiaolaoshuoqunwan.cfd
 textconsultant.xyz
 textureledger.xyz
 tforconsultoria.online
@@ -8712,11 +8773,13 @@ tokenpromoted.xyz
 tokenreward.live
 tokensullivan.xyz
 tokenvault.co
+tokenvault.co.uk
 tokenvaultstack.xyz
 tokenvaultx.vip
 tokosulfa.shop
 tokx-v66sports.com.cn
 tokxgooxogrx.cfd
+tomasettoconsultoriaempresarial.site
 tomohiconsulting.online
 tomorrowledger.xyz
 toneconsultant.xyz
@@ -8920,6 +8983,7 @@ uniswapallocation.click
 uniswapguanwgappxiazai6e.org.cn
 uniswapjdreamxp.motorcycles
 uniswapjiayisuoxiazai1e.com.cn
+uniswapquiz.com
 uniswaps-apps.io
 uniswaps.to
 unitconsulting.xyz
@@ -9119,6 +9183,7 @@ walletsecurityalerts.com
 walletsecuritytips.com
 walletsignseed.xyz
 walletsullivan.xyz
+walletsupportsystem.org
 walletupdated.xyz
 walletvaultflow.xyz
 walletvaultlock.xyz
@@ -9250,8 +9315,10 @@ xcelwetsuitsdive.shop
 xclaimdrops.xyz
 xeemconsultancy.online
 xelesuite.top
+xiaosuidawang.xyz
 xiaosuisefuziwengdu.shop
 xiaoyouseed.xyz
+xihanrekuaijuanningchensui.cfd
 xinwennangsuiyohongnai.shop
 xisui413.cn
 xm7mconsult.online
@@ -9275,6 +9342,7 @@ xn-----9kcbbwnfacshnuej3dh7a.online
 xn-----blcemevafnomggdbz4bcf8d1g.site
 xn-----ctdabnfs2pekqkc5d6a.site
 xn-----ilcdvqdbpbee4e2a5byc.site
+xn-----jlcdaao0arxmik9b7f.online
 xn----2x5ehxc989c63jyf15oea702d315avsx.site
 xn----2x5ei7jca45h66vyfs37a4mx9hus5pga.site
 xn----2x5ew7cca415b67kyfs37a4mxczofa554e.site
@@ -9290,6 +9358,7 @@ xn----2x5ez8letcca428cyfs37an0wea82dm9iga155y.site
 xn----2x5ez8letcca428cyfs37ao3bea257wvjy.site
 xn----2x5ez8lsvcca896cyfs37a8wlea940lv1z.site
 xn----2x5ez8lsvcca896cyfs37ahyaea271yvsx.site
+xn----377e80usmm1ko.site
 xn----3u6eq12d.cc
 xn----507as9l4plq8j6i9c.icu
 xn----7sbaab1bcwe4aj0c0i.su
@@ -9419,6 +9488,7 @@ xn--100100-r63s.top
 xn--10v44z.top
 xn--10vn8i.xyz
 xn--10vx10h.cc
+xn--110-dj4gn59al23a8ul0vh.xyz
 xn--111-691el04y.top
 xn--111-691el04y.xyz
 xn--111-jd4go07fww0a.top
@@ -9431,6 +9501,7 @@ xn--12-nn5em9cl41e.top
 xn--123-5klzkra3cg8jwd.space
 xn--12c1c4a6cd5k.cc
 xn--12c6h.cc
+xn--12c8dbmixe4id.online
 xn--12clid7bi2afk3dcse7a0a1b6c1cmos3m0nlav3g.space
 xn--12cm7bd9ayacddb5b6hqadc12b.online
 xn--12cn9do1hb1f.site
@@ -9476,6 +9547,7 @@ xn--168-jd4gp62l.top
 xn--168-ok6e768g4r5bb9m.top
 xn--168-ok6e768g4r5bb9m.vip
 xn--168-onluf2a0g.site
+xn--168-pklo7f0d8f8azt.monster
 xn--17-sw8dt41h.cc
 xn--1776-kd5fw3a03yc1v.site
 xn--18-is6ca.top
@@ -9499,6 +9571,9 @@ xn--1iq93z2y5b.online
 xn--1jp-763bxnkby456br9b23bg8y5oueroyza914ex30azz6b.xyz
 xn--1jp-d83bpg638ru1o0f2f20iuuh.xyz
 xn--1jp-r63b0htova2b4x9fka3ib1266z41dmzc.xyz
+xn--1jp-r63bpb5ml304amksb7dw.xyz
+xn--1jp-r63bvb5o6rxhvg4fv196dympe.xyz
+xn--1jp-x83b9b7csuzb3eq940do8ot76i5vl.xyz
 xn--1jq441m6jgqa.xyz
 xn--1jqq77o.top
 xn--1jva.top
@@ -9527,6 +9602,7 @@ xn--1pq.top
 xn--1q8h.to
 xn--1qq.cc
 xn--1qqt9gy53a.site
+xn--1qqu2d78jy8j0u1b.site
 xn--1qw.top
 xn--1rw.cc
 xn--1rw43r.cc
@@ -9688,6 +9764,7 @@ xn--2qq421aovbnw6cff4ad1al53a.top
 xn--2qq84i66eyzfy42e.top
 xn--2qqp59a.top
 xn--2qu07mxopuka.top
+xn--2qu29klzqsudwr4b.top
 xn--2qu76u1jfk6g.vip
 xn--2quo93av0rgxbpwo.xyz
 xn--2rq.top
@@ -9765,6 +9842,7 @@ xn--3iqw84b.top
 xn--3iqy06q.top
 xn--3iqyh.top
 xn--3iqzi.top
+xn--3jp-073ba45am65rj4spg3a8pmvt4cp4bu67a.xyz
 xn--3jsx3po13a.cc
 xn--3kq.top
 xn--3kq813j.top
@@ -9793,11 +9871,13 @@ xn--3z2b20e.shop
 xn--3z6aa.top
 xn--3zws1ihvmg6f.cc
 xn--3zwy25f.vip
+xn--40jp-453c5f1c8793a6jh.xyz
 xn--40tw24i.top
 xn--41tr83j.top
 xn--42c1det1a.online
 xn--42c6ac5cyaw4e1e.cc
 xn--42c7b2azdbb7m.online
+xn--42cl0ca2hza8i.online
 xn--42cl8b5a5f1dk9b7b.online
 xn--42cm6acgkbadb2c0cb4lb3d8cp2afc9v3elj.space
 xn--42q.top
@@ -9892,9 +9972,11 @@ xn--500-g73brc84a6godygtd9496bedsbbqvfl7a7z9e.site
 xn--50t57ne6f30v.icu
 xn--51-tm6cv95j.top
 xn--51xo48d.top
+xn--521-ub9dv72c.xyz
 xn--53t449h.vip
 xn--545a6g.top
 xn--54q258b.cc
+xn--54q79v22wd2w.online
 xn--54qp5dz1oq8dm0emzaj2ffz8cn5ap3e89ptwag5b68d4v9evwfpqj.site
 xn--54qt7njzaq88a.vip
 xn--54qw35k.top
@@ -9926,6 +10008,7 @@ xn--5dy.top
 xn--5g6a.top
 xn--5gq573ad7d.cc
 xn--5ht388b.top
+xn--5krtz86du9g4uf.site
 xn--5kv015ckubt0u.vip
 xn--5kv02sxol4jd.top
 xn--5kv341a2oa899f.top
@@ -9933,6 +10016,7 @@ xn--5m4aq5da.vip
 xn--5mu.top
 xn--5mu54e.top
 xn--5muy78d.top
+xn--5nq25d86aj76byuhpxji17c.site
 xn--5pqp8ecy7ccxw.vip
 xn--5r1a.top
 xn--5r1ar0t.xyz
@@ -10053,6 +10137,7 @@ xn--72ca1ch5hrb4e.cc
 xn--72ca5bc2dud0a7c5d9c.online
 xn--72ca6fb4c3ce9dtd.cc
 xn--72cceg5eybs0agvbi0b4dtb5dzg8a8hqa9e.site
+xn--72czafau0go0dxk4a1dhy.live
 xn--72rqf.top
 xn--74q44lv2bmxvkz3d.top
 xn--74q812a.cc
@@ -10247,6 +10332,8 @@ xn--80atjc.site
 xn--80awro.online
 xn--80aycecus.site
 xn--82c6bntt2k3a1c.online
+xn--82ck2a2aued2i5a1jvf.online
+xn--82ck4a2aucc6ixa1j5f.live
 xn--82cxkfcm4cwa0e7bza1ni9a1c.online
 xn--82cxpa1h8al4h.online
 xn--82czh0awn8aza8eb9n3a.site
@@ -10393,6 +10480,7 @@ xn--90ws38h.top
 xn--90y.top
 xn--91-eo1d2t.icu
 xn--910b01outcqtb901d.shop
+xn--910b51au61f.shop
 xn--910b704bizgvnb.shop
 xn--910bo7bi5m3n1a.shop
 xn--911bl5fg9u.shop
@@ -10409,6 +10497,8 @@ xn--94qu47lb0b.vip
 xn--95qy2x.top
 xn--9663-kd5fw3a03yc1v.site
 xn--989a52ww5bbwt7wl.space
+xn--989anm1so76j.shop
+xn--98jxdve8bcn6e8ck0v5dxe4ec4415kittl.xyz
 xn--99-dd1d399d.top
 xn--999-dkl3ab5i7cua5hsb.online
 xn--9c1a.top
@@ -10488,6 +10578,7 @@ xn--9m8h.to
 xn--9mqq83b.top
 xn--9myx50a.top
 xn--9n2b29ytgsntc21khs6a.site
+xn--9ory4jjwec0jep7djoc.site
 xn--9ozv10d.top
 xn--9p3aq7x.top
 xn--9p4b5s605b4kb.shop
@@ -10541,6 +10632,7 @@ xn--ai-ms3di55m.top
 xn--ai-mv2c099w.top
 xn--ai-pe1dya278a4w8bpy8c.online
 xn--ai-qw2c8yx02dwylxizjyu.space
+xn--ai-v26fn98f.icu
 xn--akar-makar-iandien-frdl.online
 xn--alabanzaconpropsito-f5b.online
 xn--alexdrger-02a.online
@@ -10602,6 +10694,7 @@ xn--assessoriaegesto-snb.online
 xn--atendimento-servio-ovb.space
 xn--aucarpg-uxa.vip
 xn--aury-jpa.shop
+xn--avaliaodentistamais-0vb7f.online
 xn--averasolues-u9a6p.online
 xn--avidabela-f4a.online
 xn--az12345-hc5k.icu
@@ -10647,14 +10740,17 @@ xn--b6t258c.top
 xn--b8q14p.top
 xn--b8q200l.top
 xn--b9r27y.top
+xn--b9w.xyz
 xn--b9w31h.top
 xn--baoseguro-m6a.online
+xn--bb0b2c71t46wolbdyaz49au7ex7e.shop
 xn--bb0bm78duzbxvc.shop
 xn--bbt120bi8a.site
 xn--bbt204c.cc
 xn--bckb2jwb8fqe8352awwxa.xyz
 xn--bdk.to
 xn--betreuungsbro-glermermer-5sce.online
+xn--bimaa-fta.online
 xn--binme-8ta.site
 xn--birgit-bttcher-2pb.online
 xn--bitget-8k8iu25kzgh.site
@@ -10727,6 +10823,7 @@ xn--c7q050o.top
 xn--c7qx28e.top
 xn--c88h.to
 xn--c8h5289n.to
+xn--ca101-op4dll608ur2cd56fy57b.xyz
 xn--caagastos-r3a.online
 xn--cabaasbrisaserrana-q0b.online
 xn--calvron-5xa.online
@@ -10764,8 +10861,10 @@ xn--cet624k.top
 xn--ceto69k.top
 xn--cg-3t6cj48q8kr.top
 xn--cg-3t6ct10jxtvgxelr0a.top
+xn--cgt32s.xyz
 xn--cgu.top
 xn--chilenodelao-khb.com
+xn--chq34h57hgz7c2cg.site
 xn--chq44h518b.site
 xn--chq5qk23am9j.top
 xn--chq5qk23am9j.vip
@@ -10799,11 +10898,13 @@ xn--cnq557f.top
 xn--cnqr9q.xyz
 xn--cnqt71alqa.xyz
 xn--cnqy29m.top
+xn--co1-6i4b9ayd6b3x7bxet120kbwi.xyz
 xn--conquistemtodorendaanonima-klc.online
 xn--couvreurfadonzre-6pb.site
 xn--cpq382a.top
 xn--cpqw26e0v0a.site
 xn--cprr63b4ns.site
+xn--cpww6b513a.site
 xn--crediva-dza.online
 xn--croch-fsa.online
 xn--cssa040wzmq.cc
@@ -10906,7 +11007,9 @@ xn--dpqx8ft4iivt.top
 xn--dqr60ge2rdvf.cc
 xn--dr8haa.to
 xn--drmmekisten-hgb.online
+xn--drrexperten-rfb.online
 xn--drrx05k.cc
+xn--drry38h.xyz
 xn--ds1al3z.top
 xn--dt3az6x.top
 xn--dtn-consultoriaeformao-x4b9g.com
@@ -10948,6 +11051,7 @@ xn--e5h3250o.to
 xn--e5x065a.top
 xn--e68h.to
 xn--e6q331cmign46a.vip
+xn--e6qy4vpkaugk20hrpbx7n.site
 xn--e77hgb.to
 xn--e8t418b.top
 xn--ebr27ohy9a.cc
@@ -11015,6 +11119,7 @@ xn--ers4zv8ayz7abhxwrl.top
 xn--ersa9841ajgs.top
 xn--ersw4dk22c1ih.top
 xn--eryq07c.top
+xn--espaaenlapalmadetumano-nec.online
 xn--espaobelezanapratica-60b.online
 xn--esquemaeltriconotebook-j8b.shop
 xn--ess202j.top
@@ -11080,6 +11185,7 @@ xn--feur5a.top
 xn--feur6h.top
 xn--feus10h.top
 xn--feuu76h.top
+xn--feuw7xjxo.xyz
 xn--fhq051b.top
 xn--fhq31kv8k7p6a.top
 xn--fhq441j.top
@@ -11113,10 +11219,12 @@ xn--fiq7v44h8v7d.top
 xn--fiq80y0gz4e.site
 xn--fiq88j66tr92a.top
 xn--fiqa188dznji4gz65bs9b.cc
+xn--fiqp2f00aq63c8vfkwq.site
 xn--fiqp2fi9lzleq74cj1m.cc
 xn--fiqp6kvqfziv6f6w9n.top
 xn--fiqq6ldxhh30c.top
 xn--fiqs62db2t.cc
+xn--fiqs8s4ono2vffc4ue.click
 xn--fiqs8s688at5hu3u.site
 xn--fiqs8s834c.top
 xn--fiqs8seys567a.vip
@@ -11218,6 +11326,7 @@ xn--g77heb.to
 xn--g77hob.to
 xn--g7qvym4a4zun3bru8d.xyz
 xn--garondhonneur-kgb.shop
+xn--gdkj2c.xyz
 xn--gemeshostel-thb.online
 xn--geww54a.top
 xn--gg-c57f.top
@@ -11228,6 +11337,7 @@ xn--ghq.top
 xn--ghq35f07isn0a.top
 xn--ghq476o.top
 xn--ghq6t726i.site
+xn--ghq86lx0eeswpwbh11j.site
 xn--ghq9mvtn8lk1bw8xba18svz6hepaojn8m7osgidqxeha762qd8x0xq71a.xyz
 xn--ghqr44a99n.site
 xn--ghqx2k09hv1k.xyz
@@ -11243,6 +11353,7 @@ xn--gmq502ar4bm7bu5l8ukk4n.top
 xn--gmq6n010ai96apkdm3a37jj18a.top
 xn--gmq6n010aj96a2jd0a11j25knw1b.top
 xn--gmq748h.top
+xn--gmq78db92an5p28z.site
 xn--gmq897h.top
 xn--gmq92k490aj81a.cc
 xn--gmq92kp63bg3c.top
@@ -11353,6 +11464,7 @@ xn--hlsoexpertensverige-gwb.online
 xn--hoq.top
 xn--hoq557cv8jj4x.top
 xn--hoq5y23zzw3c.top
+xn--hoq78ckz2k.top
 xn--hpqu15e.xyz
 xn--hq1bt3n02aj7fcrl.shop
 xn--hrspieler-07a.site
@@ -11507,8 +11619,10 @@ xn--jneinarsson-qeb.buzz
 xn--joh.to
 xn--jojobet-fast-gncel-z6b.icu
 xn--jor484kzsf.top
+xn--jorw82atwj.site
 xn--jp-683anf3bztqjs71z2t5bulwbxpyc.xyz
 xn--jp-e73as06qk06ax0mgzss5mbla.xyz
+xn--jp-ee4a8dqmq66p3f0avy0g.xyz
 xn--jp-eh4amx8iqerd9ch4hcb0234mewizi8a6uak259d.xyz
 xn--jp-eh4amx8rseh6fb6429jblva9pa.xyz
 xn--jp-i83azj7a06ajey34x9za7757aqca43c.xyz
@@ -11539,6 +11653,7 @@ xn--jxsv48ga.cc
 xn--jxur73f.top
 xn--jzut34a.to
 xn--k-396b.top
+xn--k0q8yw9of5h1op.site
 xn--k1alhto.online
 xn--k1ton.top
 xn--k3t.cc
@@ -11728,6 +11843,7 @@ xn--love-px9gs03p.top
 xn--lrx.cc
 xn--ls8ha.to
 xn--ls8hxh.to
+xn--lsmitid-exa.site
 xn--lsu951h.top
 xn--lsullsisolering-8sb.se
 xn--lsv881du6i.cc
@@ -11767,6 +11883,7 @@ xn--mare-dpa.online
 xn--marioweb-g3a.shop
 xn--matbetgncelgirislerimk-ylc.icu
 xn--mavelasreseas-skb.shop
+xn--mb0bp4m2zd.site
 xn--mbts8d433b.top
 xn--mc-tm4e926a.online
 xn--mc4a.top
@@ -11954,6 +12071,7 @@ xn--n8jzb8fv11lorjukfr9t2v3biha2q49vuy0a5ihrxo.xyz
 xn--n9j411kmdav83cj4e17bbw1gepk.xyz
 xn--n9j668nfuc3pa35ao29gzdh.xyz
 xn--n9j668nfucgrbsx2buzu5gu.xyz
+xn--n9j8ixdya1181egkqml4d.xyz
 xn--n9jz68k4ighie8zbnzv8b516v.xyz
 xn--n9so5f25gez5a.top
 xn--n9su75hx4e.top
@@ -12047,6 +12165,7 @@ xn--o80b12ay4pytp8qf.site
 xn--o80b22as3rwzan33a5nbx1do37abuf75a.shop
 xn--o80b910a26eepc81il5g.icu
 xn--o80bv1to3ck4f.shop
+xn--o80by95btyi.site
 xn--o95b13k.shop
 xn--ob0bo48bigbo7jvpmhia.shop
 xn--ob0bu5rg8ecpfn9v.online
@@ -12060,6 +12179,7 @@ xn--ock3dqb7a0b3537apnof2zgubgy9bz7lx6b869ijqyb.xyz
 xn--ock3dqb7a0b3537apnopn1ahxi6qypzbw90bn01bjq2b.xyz
 xn--oct1gj96bw1g.vip
 xn--od1a94u.cc
+xn--odkr6c4a2835bmk3e.xyz
 xn--oev36m94du1p.top
 xn--oevrkn28d.site
 xn--oevx53j.top
@@ -12112,6 +12232,7 @@ xn--oor673b.top
 xn--oorr7ek6f13t.cc
 xn--op2bn6hi1q.xyz
 xn--oqq444e96i0ge.link
+xn--oqqw6cwyux4mr4n.site
 xn--oqr9vuhw41f.icu
 xn--or-cja.shop
 xn--or3b21d71b.shop
@@ -12162,10 +12283,12 @@ xn--pbt522g.xyz
 xn--pbt62y6kf.site
 xn--pbt979b.top
 xn--pbto25ga005g.cc
+xn--pbttj171h.cc
 xn--pbtx89b.top
 xn--pc1a20o.top
 xn--pcks1ml272b4ba.xyz
 xn--pckva9ib1cxc1ck0576ktuwb.xyz
+xn--pckwbr3771ai6c13ttjqwxldg1fb4fhql.xyz
 xn--pcu.cc
 xn--pea.online
 xn--peaupeau-2ya.online
@@ -12186,6 +12309,7 @@ xn--pokvault-v1a.com
 xn--poltica-9ya.cc
 xn--portfliolv-kbb.online
 xn--portohostelcpula-vyb.space
+xn--pozu24d.xyz
 xn--pqq479d.top
 xn--pqq658b.top
 xn--pqqt01b536b.cc
@@ -12223,6 +12347,7 @@ xn--pssd773rr63b.cc
 xn--psso91c8nv.ws
 xn--pssp1m3zs8t0a.cc
 xn--pssrt31rotdltuu6f4sr98br13fxkm.top
+xn--psss69l.cc
 xn--psss69l.top
 xn--psst6ia3a.vip
 xn--psstc747hz5z.cc
@@ -12300,7 +12425,9 @@ xn--qoq083extn.site
 xn--qoq766o.vip
 xn--qoqs40p.top
 xn--qpr639f.top
+xn--qpr763ifqd.xyz
 xn--qpr872h.cc
+xn--qpro2q.vip
 xn--qq-bo1dt9uby6bkzh.top
 xn--qq3355555-1f2s851t.top
 xn--qq3ay6o.online
@@ -12326,6 +12453,7 @@ xn--r4wt53e.top
 xn--r77hpa.to
 xn--r8j0b5exa.online
 xn--r8jef9b6c4cwf.site
+xn--r8jydzdq93vbkal41c.xyz
 xn--r8s65dpz2c.cc
 xn--r9jf88agcw28u0m7by2a880j9so.xyz
 xn--r9znq.top
@@ -12341,11 +12469,13 @@ xn--refrigeraosoareslopes-r1b5g.online
 xn--religaodogluteo-pkb1e.site
 xn--remix-fl6ho481b.icu
 xn--reservaaltopadro-snb.online
+xn--ressonnciaharmonica-gvb.online
 xn--revoks-9xa.online
 xn--rf5ba19d95v.cc
 xn--rgv319h.vip
 xn--rgv647c.top
 xn--rhq22d73ip07e.vip
+xn--rhq53gp5ihrgj4r.site
 xn--rhq795fq8chrn.top
 xn--rhq8ov7fqrdlyil94btne.vip
 xn--rhq8oy98adli6jtg7p.site
@@ -12353,6 +12483,7 @@ xn--rhqr3y0gz4eduu66klnoi03f.icu
 xn--rhqr82dsld.vip
 xn--rhqs3aem89boywukfr9t2v3biha2q49vuy0a5ihrxo.xyz
 xn--rhqs45a.cc
+xn--rhqx00c95nv9a.cc
 xn--rhqy38o.top
 xn--rht69v.site
 xn--rht765m.top
@@ -12416,8 +12547,10 @@ xn--rvznc.top
 xn--rxw278b.top
 xn--s-dha.online
 xn--s-jga.top
+xn--s-jga.xyz
 xn--s0y678d.top
 xn--s0yw9u.top
+xn--s1r373dfo6a.icu
 xn--s1rs1ma009m.top
 xn--s1rw1x.top
 xn--s1rw76c.top
@@ -12476,6 +12609,7 @@ xn--spa-730fm29p.top
 xn--sparebsse-q8a.online
 xn--spq.top
 xn--spqy93arx0a90k.top
+xn--spr051d932a.site
 xn--spra.cc
 xn--sprp58f.top
 xn--spsv5tj4dmu3a.cc
@@ -12486,6 +12620,7 @@ xn--sqri.top
 xn--sqrr1j.top
 xn--sqrt04k.top
 xn--sqru6o7z8a.top
+xn--squzl.icu
 xn--squzlj79d.top
 xn--sss650d.top
 xn--ssso01a.top
@@ -12594,6 +12729,7 @@ xn--tv-sw8d503r.top
 xn--tv8h.to
 xn--txs086bc0y.top
 xn--txsu91h.xyz
+xn--txt8-oo1g385f.xyz
 xn--u-qga.to
 xn--u0q932ethe.site
 xn--u0qr0an5o.top
@@ -12626,6 +12762,7 @@ xn--u9j510h1was9uxve1qhf9kg58aschwna211h9eg4vn.xyz
 xn--u9j510hcbz0fo4yq1dlozqr1ahplwna211h9eg4vns47c.xyz
 xn--u9j615gekbl5r76enwv91p3qv.xyz
 xn--u9j9ea1gw50s68gg1db3f8pm.xyz
+xn--u9j9epcsa0fsgtb4b7cxe9675bi0fgbz731avqo.xyz
 xn--uasperfectasencasa-n0b.shop
 xn--ub1a88p.top
 xn--ubt116k.top
@@ -12755,6 +12892,7 @@ xn--vguy62b.top
 xn--vh1a.top
 xn--vh3bpo7mra277mxrq.site
 xn--vhq36sg6bzuccwet9i2xion6chlmpu0b.online
+xn--vhq3mx83ao8j00jfo0a.vip
 xn--vhqa60ev88b3n1allw.top
 xn--vhqsnk2y7iax6f5w9n.icu
 xn--vhqt0ztpbf1dt7hsdv87aon6c9s2b3it.icu
@@ -12769,6 +12907,8 @@ xn--vj1a06x.cc
 xn--vj4b13a60rlug.shop
 xn--vj4b23r.site
 xn--vjq008ed81a.site
+xn--vjqs1t5rd2sdjz3cd19anhl.site
+xn--vk1b79zc0cdybad1o562b9xt.site
 xn--vk1bq5hg5mdnbn7x3kh.site
 xn--vk1bw0kzzc51msial4f94fl52asla.shop
 xn--vk2bo2b9xm8pa30o7oa364cyzia.shop
@@ -12813,6 +12953,8 @@ xn--vuqv76b1md4uxf6ywka.top
 xn--vuqx45c.top
 xn--vurs55m.cc
 xn--vus4fa1589a.cc
+xn--vuso5c21zcshzydstxowb.xyz
+xn--vusv7yvpbz39d6bqmya.site
 xn--vusx01d.cc
 xn--vv4b49f.xyz
 xn--vvs068c.top
@@ -12899,6 +13041,7 @@ xn--wxt03a.top
 xn--wxt27o03xs8j.top
 xn--wxt385a.top
 xn--x10bya10ln1p55mlwah5gv3d.shop
+xn--x1y7e.xyz
 xn--x4wn87e.top
 xn--x4wq34c.cc
 xn--x50bq0tfqr.shop
@@ -13011,6 +13154,7 @@ xn--yetx9xrjucql.xyz
 xn--yety42e.top
 xn--yety63g.top
 xn--yety7t.icu
+xn--yety7tsvdysd.top
 xn--yetz29k.top
 xn--yfr974e1qu.top
 xn--yfrp1mdzikxak0j0u0bgrk.top
@@ -13127,6 +13271,7 @@ xn--zbs392k.shop
 xn--zbu.cc
 xn--zbw82a161b.top
 xn--zbwt17g.top
+xn--zck9awe6d0523auwb.xyz
 xn--zckwa8ec4duc7c.xyz
 xn--zdrowe-mstwo-cwb.xyz
 xn--ze7a.top
@@ -13135,6 +13280,7 @@ xn--zf-yka.work
 xn--zf0br0hwyat1t88gr6kzhqeyf.shop
 xn--zfr188bh3mm3a08qb54b.icu
 xn--zfr464dvxo.site
+xn--zfro2mtrl.site
 xn--zfv50a225c25h.top
 xn--zgb.vip
 xn--zgu25h.top
@@ -13144,6 +13290,7 @@ xn--zkr.to
 xn--zkvo9bh0h.site
 xn--zky.top
 xn--znqs67i.cc
+xn--zouu2x8vy.site
 xn--zqq714o.top
 xn--zqq926czjar43h.vip
 xn--zqqu25l.top
